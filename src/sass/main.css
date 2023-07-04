@@ -1,4 +1,38 @@
 @charset "UTF-8";
+.header {
+  background-color: #84a178;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.header__logo {
+  fill: #f8d24e;
+  width: 18.6px;
+  height: 37.1px;
+  position: relative;
+}
+.header__logo-box {
+  position: relative;
+}
+.header__logo-span {
+  position: absolute;
+  color: #f8d24e;
+  font-size: 14.874px;
+  bottom: 1px;
+  right: -11px;
+}
+.header__menu {
+  background-color: transparent;
+  border: none;
+}
+.header__icon {
+  width: 32px;
+  height: 32px;
+  fill: #ffffff;
+}
+
 /*
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
