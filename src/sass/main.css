@@ -27,6 +27,7 @@
   background-image: url("../images/demo.jpg");
   background-size: cover;
   background-position: center;
+<<<<<<< HEAD
 }
 
 .gallery {
@@ -39,4 +40,6 @@
   padding-bottom: 10px;
   max-width: 767px;
   margin: 0 auto;
+=======
+>>>>>>> 063d81360fc190138bb1f9d3c2f86654d3738d18
 }/*# sourceMappingURL=main.css.map */
