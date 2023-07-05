@@ -18,6 +18,12 @@
     }
   }
 
+  &__box {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
   &__menu {
     background-color: transparent;
     border: none;
@@ -28,5 +34,32 @@
     width: 32px;
     height: 32px;
     fill: #ffffff;
+  }
+}
+
+.buy-now {
+  background-color: #f8d24e;
+  width: 152px;
+  height: 42px;
+  border-style: none;
+  border-radius: 10px;
+  display: none;
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  &__text {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &__svg {
+    width: 12px;
+    height: 12px;
   }
 }
