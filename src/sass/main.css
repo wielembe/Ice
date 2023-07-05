@@ -37,6 +37,13 @@ advantages-header {
   opacity: 0;
 }
 
+advantages-list {
+  display: flex;
+  width: 368px;
+  height: 52px;
+  flex-direction: column;
+  flex-shrink: 0;
+}
 advantages-list_number {
   color: #fcfcfc;
   text-align: center;
