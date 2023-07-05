@@ -5,7 +5,9 @@
   <div class="ice-cream">
     <h3 class="ice-cream__title">ice cream</h3>
     <p>Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
-    <button class="ice-cream__button" type="button" data-modal-open></button>
+    <button class="products__button" type="button" data-modal-open>
+      <svg width="40" height="16"><use href="../images/icons-ice_cream.svg#icon-Arrow"></use></svg>
+    </button>
   </div>
   <div class="ice-coffee">
     <h3 class="ice-coffee__title">ice coffee</h3>
@@ -13,14 +15,82 @@
       Fragrant invigorating drink created from 100% natural ingredients without the use of
       preservatives and flavor enhancers
     </p>
-    <button></button>
+    <button class="products__button" type="button" data-modal-open>
+      <svg width="40" height="16"><use href="../images/icons-ice_cream.svg#icon-Arrow"></use></svg>
+    </button>
   </div>
   <div class="milkshakes">
-    <h3 class="milkshake__title">milkshakes</h3>
+    <h3 class="milkshakes__title">milkshakes</h3>
     <p>
       Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other
       sweets of your choice
     </p>
-    <button></button>
+    <button class="products__button" type="button" data-modal-open>
+      <svg width="40" height="16"><use href="../images/icons-ice_cream.svg#icon-Arrow"></use></svg>
+    </button>
   </div>
 </section>
+
+<!--modal-->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__close" data-modal-close>
+      <svg class="close-icon" width="18" height="18">
+        <use href="images/icons.svg#icon-close-black-18dp-2-1"></use>
+      </svg>
+    </button>
+    <form action="javascript:void(0);" method="POST"></form>
+    <form class="modal-form">
+      <p class="modal-form__title">Zostaw swoje dane w formularzu poniżej</p>
+      <!--user-->
+      <label class="modal-form__label name" for="user-name">
+        <p class="name__title">Imie</p>
+        <div class="name__user">
+          <input class="modal__input" type="text" name="name" id="user-name" required />
+          <svg class="name__icon" width="12" height="12">
+            <use href="images/icons.svg#icon-Vector"></use>
+          </svg></div
+      ></label>
+      <label class="modal-form__label name" for="user-phone">
+        <p class="name__title">Telefon</p>
+        <div class="name__user">
+          <input class="modal__input" type="tel" name="phone" id="user=phone" required />
+          <svg class="name__icon" width="13" height="13">
+            <use href="images/icons.svg#icon-Vector-2"></use>
+          </svg></div
+      ></label>
+      <label class="modal-form__label name" for="user-email">
+        <p class="name__title">Email</p>
+        <div class="name__user">
+          <input class="modal__input" type="email" name="email" id="user-email" required />
+          <svg class="name__icon" width="15" height="12">
+            <use href="images/icons.svg#icon-Vector-3"></use>
+          </svg></div
+      ></label>
+      <label class="modal-form__label feedback" for="user-feedback">
+        <p class="name__title">Komentarz</p>
+        <textarea
+          class="feedback__text"
+          name="feedback"
+          id="user-feedback"
+          placeholder="Wprowadź tekst"
+        ></textarea>
+      </label>
+
+      <!--icon-checked-->
+      <label class="check option">
+        <input class="check__input" type="checkbox" />
+        <span class="check__box"></span>
+        <p class="check__regulations">
+          Oświadczam iż akceptuję
+          <a class="check__link check__link--accents" href="">Regulamin</a>
+          i
+          <a class="check__link check__link--accents" href="">Politykę Prywatności.</a>
+        </p>
+      </label>
+      <!--sending-->
+      <button class="modal__button" type="submit">Wyślij</button>
+    </form>
+  </div>
+</div>
+<script src="./js/modal.js"></script>
