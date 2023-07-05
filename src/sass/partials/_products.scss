@@ -1,5 +1,5 @@
 .products {
-  background-image: url(../images/Backgroud_mobile\ 1x.jpg);
+  background-image: url(./images/Backgroud_mobile\ 1x.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@
 }
 
 .ice-cream__title::before {
-  content: url(../images/products/ice-cream_480\ 1x.jpg);
+  content: url(./images/products/ice-cream_480\ 1x.jpg);
   width: 200px;
   height: 200px;
   border-radius: 100px;
