@@ -39,57 +39,20 @@
         <use href="images/icons.svg#icon-close-black-18dp-2-1"></use>
       </svg>
     </button>
+    <p class="modal-form__title">Chololate icecream</p>
     <form action="javascript:void(0);" method="POST"></form>
-    <form class="modal-form">
-      <p class="modal-form__title">Zostaw swoje dane w formularzu poniżej</p>
-      <!--user-->
-      <label class="modal-form__label name" for="user-name">
-        <p class="name__title">Imie</p>
-        <div class="name__user">
-          <input class="modal__input" type="text" name="name" id="user-name" required />
-          <svg class="name__icon" width="12" height="12">
-            <use href="images/icons.svg#icon-Vector"></use>
-          </svg></div
-      ></label>
-      <label class="modal-form__label name" for="user-phone">
-        <p class="name__title">Telefon</p>
-        <div class="name__user">
-          <input class="modal__input" type="tel" name="phone" id="user=phone" required />
-          <svg class="name__icon" width="13" height="13">
-            <use href="images/icons.svg#icon-Vector-2"></use>
-          </svg></div
-      ></label>
-      <label class="modal-form__label name" for="user-email">
-        <p class="name__title">Email</p>
-        <div class="name__user">
-          <input class="modal__input" type="email" name="email" id="user-email" required />
-          <svg class="name__icon" width="15" height="12">
-            <use href="images/icons.svg#icon-Vector-3"></use>
-          </svg></div
-      ></label>
-      <label class="modal-form__label feedback" for="user-feedback">
-        <p class="name__title">Komentarz</p>
+    <form class="modal__form">
+      <img class="modal__img" alt="gałka lodów czekoladowych" src="../images/products/products-modal_mobile 1x.jpg"/>
+          <input class="modal__input" type="text" name="name" id="user-name" placeholder="Name"required />
+          <input class="modal__input" type="tel" name="phone" id="user=phone" placeholder="Phone"required />
         <textarea
           class="feedback__text"
           name="feedback"
           id="user-feedback"
-          placeholder="Wprowadź tekst"
+          placeholder="Comment"
         ></textarea>
       </label>
-
-      <!--icon-checked-->
-      <label class="check option">
-        <input class="check__input" type="checkbox" />
-        <span class="check__box"></span>
-        <p class="check__regulations">
-          Oświadczam iż akceptuję
-          <a class="check__link check__link--accents" href="">Regulamin</a>
-          i
-          <a class="check__link check__link--accents" href="">Politykę Prywatności.</a>
-        </p>
-      </label>
-      <!--sending-->
-      <button class="modal__button" type="submit">Wyślij</button>
+      <button class="modal__button" type="submit">Submit</button>
     </form>
   </div>
 </div>
