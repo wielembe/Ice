@@ -5,12 +5,24 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 
+
+
+
+
+
+
+
+
+
 @use './partials/advantages';
 @use './partials/main-styles';
 @use './partials/vars';
 
 @import './mixins';
 @import './partials/header';
-@import './products';
+@import './partials/products';
+
+
 
 @import './example';
+
