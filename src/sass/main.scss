@@ -4,7 +4,10 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+
+@use './products';
 @import './mixins';
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 @use './partials/header';
 =======
@@ -12,4 +15,7 @@
 @import './partials/products';
 
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 @import './example';
+@import './';
