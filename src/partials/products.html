@@ -1,25 +1,59 @@
 <section class="products">
   <a class="products_label" id="100% natural">100% natural</a>
   <p class="products__title">products</p>
+
+  <div class="ice-cream">
+    <h3 class="ice-cream__title">ice cream</h3>
+    <p>Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
+    <button class="products__button" type="button" data-modal-open>
+      <svg width="40" height="16"><use href="../images/icons-ice_cream.svg#icon-Arrow"></use></svg>
+    </button>
+  </div>
+  <div class="ice-coffee">
+    <h3 class="ice-coffee__title">ice coffee</h3>
+    <p>
+      Fragrant invigorating drink created from 100% natural ingredients without the use of
+      preservatives and flavor enhancers
+    </p>
+    <button class="products__button" type="button" data-modal-open>
+      <svg width="40" height="16"><use href="../images/icons-ice_cream.svg#icon-Arrow"></use></svg>
+    </button>
+  </div>
+  <div class="milkshakes">
+    <h3 class="milkshakes__title">milkshakes</h3>
+    <p>
+      Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other
+      sweets of your choice
+    </p>
+    <button class="products__button" type="button" data-modal-open>
+      <svg width="40" height="16"><use href="../images/icons-ice_cream.svg#icon-Arrow"></use></svg>
+    </button>
+  </div>
 </section>
-<div class="ice-cream">
-  <h3 class="ice-cream__title">ice cream</h3>
-  <p>Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
-  <button></button>
+
+<!--modal-->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__close" data-modal-close>
+      <svg class="close-icon" width="11.11" height="11.14">
+        <use href="images/icons.svg#icon-close-black-18dp-2-1"></use>
+      </svg>
+    </button>
+    <p class="modal-form__title">Chololate icecream</p>
+    <form action="javascript:void(0);" method="POST"></form>
+    <form class="modal__form">
+      <img class="modal__img" alt="gałka lodów czekoladowych" src="../images/products/products-modal_mobile 1x.jpg"/>
+          <input class="modal__input" type="text" name="name" id="user-name" placeholder="Name"required />
+          <input class="modal__input" type="tel" name="phone" id="user=phone" placeholder="Phone"required />
+        <textarea
+          class="feedback__text"
+          name="feedback"
+          id="user-feedback"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+      <button class="modal__button" type="submit">Submit</button>
+    </form>
+  </div>
 </div>
-<div class="ice-coffee">
-  <h3 class="ice-coffee__title">ice coffee</h3>
-  <p>
-    Fragrant invigorating drink created from 100% natural ingredients without the use of
-    preservatives and flavor enhancers
-  </p>
-  <button></button>
-</div>
-<div class="milkshakes">
-  <h3 class="milkshake__title">milkshakes</h3>
-  <p>
-    Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other
-    sweets of your choice
-  </p>
-  <button></button>
-</div>
+<script src="./js/modal.js"></script>
