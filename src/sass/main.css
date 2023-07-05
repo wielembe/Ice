@@ -33,6 +33,31 @@
   fill: #ffffff;
 }
 
+advantages-header {
+  opacity: 0;
+}
+
+advantages-list_number {
+  color: #fcfcfc;
+  text-align: center;
+  font-size: 58px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.32px;
+}
+advantages-list_text {
+  color: #fcfcfc;
+  text-align: center;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 176%;
+  letter-spacing: 0.32px;
+}
+
 /*
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
