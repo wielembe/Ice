@@ -1,24 +1,23 @@
-//.products {
-//background-image: url(../images/Backgroud_mobile\ 1x.jpg);
+.products {
+  background-image: url(../images/Backgroud_mobile\ 1x.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
 
-//background-position: center;
-//background-size: cover;
-//background-repeat: no-repeat;
-//width: 100%;
-//margin: 0 auto;
-//align-items: center;
+  &__label {
+    color: #131313;
+  }
+  &__title {
+    color: #131313;
+  }
+}
 
-//&__label {
-// color: #131313;
-//}
-//&__title {
-//color: #131313;
-//}
-//}
-
-//.ice-cream__title::before {
-//content: url(../images/products/ice-cream_480\ 1x.jpg);
-//width: 200px;
-//height: 200px;
-//border-radius: 100px;
-//}
+.ice-cream__title::before {
+  content: url(../images/products/ice-cream_480\ 1x.jpg);
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
