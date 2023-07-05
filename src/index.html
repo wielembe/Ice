@@ -4,15 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nagłówek strony</title>
+
+    <!-- modern normalize below-->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./sass/main.min.css" />
+    <link rel="stylesheet" href="./sass/main.min.css.map" />
   </head>
   <body>
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. TO JEST TEST-->
+    <include src="./partials/header.html"></include>
     <include src="./partials/example.html"></include>
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
     <script src="./index.js" type="module"></script>
