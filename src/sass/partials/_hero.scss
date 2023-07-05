@@ -1,0 +1,89 @@
+@import '../mixins';
+
+.hero {
+  background-color: #84a178;
+  padding-top: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @include mobile {
+    padding-top: 40px;
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    color: #fcfcfc;
+    font-size: 26px;
+    font-family: Seymour One;
+    letter-spacing: 1.04px;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 247px;
+    height: 97px;
+  }
+
+  &__menu {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    padding-top: 32px;
+    margin-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 19px;
+    margin: 0px;
+
+    @include mobile {
+      padding-bottom: 0px;
+    }
+  }
+
+  &__products {
+    display: block;
+    width: 108px;
+    height: 38px;
+    border-radius: 8px;
+    border: 2px solid #f8d24e;
+    text-align: center;
+    padding-top: 11px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  &__how-made {
+    color: #f8d24e;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: underline;
+    padding-top: 11px;
+  }
+
+  &__img-group {
+    position: relative;
+    height: 217px;
+
+    @include mobile {
+      height: 150px;
+    }
+  }
+
+  &__main-img {
+    position: absolute;
+    bottom: 0px;
+    right: 40px;
+    z-index: 99;
+
+    @include mobile {
+      width: 218px;
+      height: 267px;
+      right: 20px;
+    }
+  }
+
+  &__dots-svg {
+    position: absolute;
+    width: 320px;
+    height: 50px;
+    bottom: 0px;
+    right: -20px;
+  }
+}

@@ -8,26 +8,20 @@
 
   &__logo {
     fill: #f8d24e;
-    width: 18.6px;
-    height: 37.1px;
+    width: 40px;
+    height: 37px;
     position: relative;
-  }
 
-  &__logo-box {
-    position: relative;
-  }
-
-  &__logo-span {
-    position: absolute;
-    color: #f8d24e;
-    font-size: 14.874px;
-    bottom: 1px;
-    right: -11px;
+    @include mobile {
+      width: 48px;
+      height: 44px;
+    }
   }
 
   &__menu {
     background-color: transparent;
     border: none;
+    padding: 0px;
   }
 
   &__icon {
