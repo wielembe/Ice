@@ -6,7 +6,18 @@
     </div>
     <div class="about__content-flex-container">
       <div class="about__img-container">
-        <!-- Wstawić obraz krowy -->
+        <img class="about__img"
+                alt="A cow eating grass with trees in the background."
+                src="./images/about/cow-photo-279w.webp"
+                srcset="
+                    ./images/about/cow-photo-279w.webp 279w,
+                    ./images/about/cow-photo-330w.webp 330w,
+                    ./images/about/cow-photo-490w.webp 490w,
+                    ./images/about/cow-photo-558w.webp 558w,
+                    ./images/about/cow-photo-660w.webp 660w,
+                    ./images/about/cow-photo-980w.webp 980w
+                "
+              />
       </div>
       <div class="about__txt-and-btn-container">
         <p class="about__texts">
@@ -31,9 +42,17 @@
     </div>
   </div>
 </section>
-<div class="read-more-modal">
+<div class="read-more-modal is-hidden" data-modal>
+  <button class="read-more-modal__close-button" data-modal-close>
+    <svg width="30" height="30">
+      <line x1="9.5" y1="9.5" x2="20.5" y2="20.5" stroke="#131313" stroke-width="1" />
+      <line x1="9.5" y1="20.5" x2="20.5" y2="9.5" stroke="#131313" stroke-width="1" />
+    </svg>
+  </button>
   <p class="read-more-modal__tittle">How it's made?</p>
-  <iframe class="read-more-modal__video"></iframe>
+  <div class="read-more-modal__video-frame">
+    <iframe class="read-more-modal__video" src="https://www.youtube.com/embed/7gJIyHnD710" title="7 Easy Homemade Ice Cream Recipes" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></iframe>
+  </div>
   <p class="read-more-modal__text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
     labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
