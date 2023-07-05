@@ -4,6 +4,11 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+
+
+@use './partials/advantages';
+
 @import './mixins';
 @import './partials/header';
+
 @import './example';
