@@ -5,5 +5,11 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 @import './mixins';
+<<<<<<< Updated upstream
 @use './partials/header';
+=======
+@import './partials/header';
+@import './partials/products';
+
+>>>>>>> Stashed changes
 @import './example';
