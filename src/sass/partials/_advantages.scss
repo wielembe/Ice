@@ -3,8 +3,6 @@ advantages-header {
 }
 advantages-list {
   display: flex;
-  width: 368px;
-  height: 52px;
   flex-direction: column;
   flex-shrink: 0;
   &_number {
@@ -25,5 +23,17 @@ advantages-list {
     font-style: normal;
     font-weight: 400;
     line-height: 176%;
+  }
+}
+@media screen and (min-width: 768px) {
+  advantages-list {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  advantages-list {
+    display: flex;
+    flex-direction: row;
   }
 }
