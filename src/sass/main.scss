@@ -5,5 +5,5 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 @import './mixins';
-@use './partials/header';
+@import './partials/header';
 @import './example';
