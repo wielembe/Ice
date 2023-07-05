@@ -1,0 +1,38 @@
+.header {
+  background-color: #84a178;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+
+  &__logo {
+    fill: #f8d24e;
+    width: 18.6px;
+    height: 37.1px;
+    position: relative;
+  }
+
+  &__logo-box {
+    position: relative;
+  }
+
+  &__logo-span {
+    position: absolute;
+    color: #f8d24e;
+    font-size: 14.874px;
+    bottom: 1px;
+    right: -11px;
+  }
+
+  &__menu {
+    background-color: transparent;
+    border: none;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    fill: #ffffff;
+  }
+}
