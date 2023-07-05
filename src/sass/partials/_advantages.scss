@@ -1,0 +1,43 @@
+advantages-header {
+  opacity: 0;
+}
+advantages-list {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  &_number {
+    color: #fcfcfc;
+    text-align: center;
+    font-size: 58px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.32px;
+  }
+  &_text {
+    color: #fcfcfc;
+    text-align: center;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 176%;
+  }
+  advantages-icon {
+    border-radius: 25px;
+    background: #f8d24e;
+  }
+}
+@media screen and (min-width: 768px) {
+  advantages-list {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  advantages-list {
+    display: flex;
+    flex-direction: row;
+  }
+}
