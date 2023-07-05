@@ -1,3 +1,15 @@
-li {
-  background-color: #aec6a5;
+.products {
+  &__label {
+    color: #131313;
+  }
+  &__title {
+    color: #131313;
+  }
+}
+
+.ice-cream__title::before {
+  content: url(../images/products/ice-cream_480\ 1x.jpg);
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
 }
