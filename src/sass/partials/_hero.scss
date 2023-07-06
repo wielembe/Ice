@@ -20,6 +20,12 @@
       padding-right: calc((100% - 704px) / 2);
       padding-left: calc((100% - 704px) / 2);
     }
+
+    @include desktop {
+      padding-top: 45px;
+      padding-right: calc((100% - 1168px) / 2);
+      padding-left: calc((100% - 1168px) / 2);
+    }
   }
 
   &__title {
@@ -33,6 +39,12 @@
     font-weight: 400;
     width: 247px;
     height: 97px;
+
+    @include desktop {
+      font-size: 38px;
+      width: 367px;
+      height: 144px;
+    }
   }
 
   &__menu {
@@ -52,6 +64,9 @@
     @include tablet {
       padding-top: 24px;
     }
+    @include desktop {
+      padding-top: 28px;
+    }
   }
 
   &__products {
@@ -64,6 +79,13 @@
     padding-top: 11px;
     font-size: 12px;
     font-weight: 600;
+
+    @include desktop {
+      padding-top: 12px;
+      font-size: 14px;
+      width: 134px;
+      height: 42px;
+    }
   }
   &__how-made {
     color: $secondaryBrandColor;
@@ -71,6 +93,14 @@
     font-weight: 600;
     text-decoration: underline;
     padding-top: 11px;
+
+    @include desktop {
+      padding-top: 12px;
+      font-size: 14px;
+      width: 134px;
+      height: 42px;
+      text-align: center;
+    }
   }
 
   &__aside {
@@ -83,6 +113,10 @@
       gap: 20px;
       right: calc((100% - 704px) / 2);
       top: 94px;
+    }
+    @include desktop {
+      right: calc((100% - 1168px) / 2);
+      top: 126px;
     }
   }
 
@@ -100,6 +134,10 @@
     font-size: 28px;
     font-weight: 900;
     letter-spacing: 1.12px;
+
+    @include desktop {
+      font-size: 46px;
+    }
   }
 
   &__span {
@@ -107,6 +145,10 @@
     text-align: right;
     font-size: 8px;
     font-weight: 400;
+
+    @include desktop {
+      font-size: 14px;
+    }
   }
 
   &__img-group {
@@ -120,6 +162,10 @@
     @include tablet {
       height: 176px;
     }
+
+    @include desktop {
+      height: 332px;
+    }
   }
 
   &__plate-img {
@@ -131,6 +177,11 @@
       padding-top: 12px;
       position: relative;
       z-index: 98;
+    }
+
+    @include desktop {
+      margin-left: calc((100% - 1168px) / 2);
+      padding-top: 42px;
     }
   }
 
@@ -147,6 +198,14 @@
       line-height: 140%;
       width: 165px;
       padding-top: 27px;
+    }
+
+    @include desktop {
+      margin-left: 16px;
+      font-size: 14px;
+      width: 200px;
+      padding-top: 109px;
+      margin-top: 0px;
     }
   }
 
@@ -166,6 +225,12 @@
       width: 268px;
       height: 329px;
       right: calc((100% - 704px) / 2 + 60px);
+    }
+
+    @include desktop {
+      width: 456px;
+      height: 560px;
+      right: calc((100% - 1168px) / 2 + 76px);
     }
   }
 
@@ -195,6 +260,10 @@
       height: 67.8px;
       bottom: 0px;
       left: calc((100% - 704px) / 2 - 32px);
+    }
+
+    @include desktop {
+      display: none;
     }
   }
 }

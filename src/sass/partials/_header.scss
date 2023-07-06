@@ -14,6 +14,12 @@
     padding-left: 32px;
   }
 
+  @include desktop {
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 8px;
+  }
+
   &__logo {
     fill: $secondaryBrandColor;
     width: 40px;
@@ -24,12 +30,21 @@
       width: 48px;
       height: 44px;
     }
+
+    @include desktop {
+      width: 60px;
+      height: 65px;
+    }
   }
 
   &__menu {
     background-color: transparent;
     border: none;
     padding: 0px;
+
+    @include desktop {
+      display: none;
+    }
   }
 
   &__icon {
@@ -41,6 +56,26 @@
   &__wrapper {
     display: flex;
     gap: 32px;
+    align-items: end;
+
+    @include desktop {
+      gap: 205px;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @include desktop {
+      display: flex;
+      list-style: none;
+      gap: 28px;
+      padding: 13px;
+      align-items: center;
+      color: $textWhite;
+      font-size: 16px;
+      font-weight: 700;
+    }
   }
 }
 
