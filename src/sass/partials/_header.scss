@@ -1,38 +1,72 @@
+@import '../mixins';
+@import './vars';
+
 .header {
-  background-color: #84a178;
+  background-color: $firstBrandColor;
   display: flex;
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
 
+  @include tablet {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
   &__logo {
-    fill: #f8d24e;
-    width: 18.6px;
-    height: 37.1px;
+    fill: $secondaryBrandColor;
+    width: 40px;
+    height: 37px;
     position: relative;
-  }
 
-  &__logo-box {
-    position: relative;
-  }
-
-  &__logo-span {
-    position: absolute;
-    color: #f8d24e;
-    font-size: 14.874px;
-    bottom: 1px;
-    right: -11px;
+    @include mobile {
+      width: 48px;
+      height: 44px;
+    }
   }
 
   &__menu {
     background-color: transparent;
     border: none;
+    padding: 0px;
   }
 
   &__icon {
     width: 32px;
     height: 32px;
     fill: #ffffff;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+.buy-now {
+  background-color: $secondaryBrandColor;
+  width: 152px;
+  height: 42px;
+  border-style: none;
+  border-radius: 10px;
+  display: none;
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  &__text {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &__svg {
+    width: 12px;
+    height: 12px;
   }
 }

@@ -9,6 +9,12 @@
   }
 }
 
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
 @mixin section-tittle($color) {
   font-family: Seymour One;
   font-size: 36px;
