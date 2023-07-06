@@ -1,19 +1,44 @@
-//.products {
-//background-image: url(../images/Backgroud_mobile\ 1x.jpg);
-//background-position: center;
-//background-size: cover;
-//background-repeat: no-repeat;
-//width: 100%;
-//margin: 0 auto;
-//align-items: center;
+.products {
+  background-image: url(../images/Backgroud_mobile@1x.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
 
-//&__label {
-//color: #131313;
-//}
-//&__title {
-//color: #131313;
-//}
-//}
+  &__label {
+    color: #131313;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  &__title {
+    color: #131313;
+    font-family: Seymour One;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.26;
+    text-transform: uppercase;
+  }
+  &__name {
+    color: #131313;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.22;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.77;
+    text-align: center;
+  }
+}
 
 //.ice-cream__title::before {
 //content: url(../images/products/ice-cream_480\ 1x.jpg);
