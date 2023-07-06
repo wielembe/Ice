@@ -5,9 +5,9 @@
 //}
 
 .review {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: center;
   padding: 0;
   justify-content: center;
   &__list {
@@ -15,23 +15,25 @@
   }
 
   &__slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: center;
     margin: 0;
   }
 
   &__pic {
     display: flex;
+
     justify-content: center;
-    margin: 0 auto;
+    margin: auto;
 
     border-radius: 50%;
     margin-bottom: 32px;
+    width: 84px;
   }
 
   &__opinion {
-    display: flex;
+    //display: flex;
     justify-content: center;
     border-radius: 10px;
     margin-top: 32px;
@@ -51,7 +53,7 @@
     letter-spacing: 0.04em;
     line-height: 2.25em;
     margin-bottom: 32px;
-    margin: 0 auto;
+    margin: 0;
     max-width: 280px;
   }
 
@@ -61,6 +63,7 @@
     font-family: 'Monsterrat', sans-serif;
     font-weight: 500;
     padding-top: 32px;
+    max-width: 280px;
   }
 
   &__pagination {
