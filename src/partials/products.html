@@ -36,26 +36,23 @@
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button class="modal__close" data-modal-close>
-      <svg class="close-icon" width="11.11" height="11.14">
+      <svg class="close-icon" width="11" height="11">
         <use href="./images/icons-ice_cream.svg#icon-icon-close"></use>
       </svg>
     </button>
     <p class="modal__title">Chololate icecream</p>
     <img class="modal__img" alt="gałka lodów czekoladowych" src="./images/products/products-modal_mobile@1x.jpg"/>
     <ul class="value">
-      <li class="value__item">320 kcal
+      <li class="value__item">kcal <div class="value__roundborder"> <span class="value__number">320</span> </div>
       </li>
-      <li class="value__item">
-        4g Prote...
+      <li class="value__item">Prote... <div class="value__roundborder"> <span class="value__number">4g</span> </div>
       </li>
-      <li class="value__item">8,2g Fats</li>
-      <li class="value__item">40,4g Carbs</li>
+      <li class="value__item">Fats <div class="value__roundborder"> <span class="value__number">8,2g</span> </div></li>
+      <li class="value__item">Carbs <div class="value__roundborder"> <span class="value__number">40,4g</span> </div></li>
     </ul>
     <p class="ingredients">Ingredients</p>
     <ul class="ingredients__list">
-      <li class="ingredients__item">
-        Milk 100ml
-      </li>
+      <li class="ingredients__item">Milk 100ml</li>
       <li class="ingredients__item">Belgian chocolate 20g</li>
       <li class="ingredients__item">Cream 150ml</li>
       <li class="ingredients__item">Cocoa powder 30g</li>
@@ -67,18 +64,17 @@
 
 
     <form class="modal__form">
-      <img class="modal__img" alt="gałka lodów czekoladowych" src="./images/products/products-modal_mobile@1x.jpg"/>
           <input class="modal__input" type="text" name="name" id="user-name" placeholder="Name"required />
           <input class="modal__input" type="tel" name="phone" id="user=phone" placeholder="Phone"required />
 
         <textarea
-          class="form__feedback"
+          class="modal__feedback"
           name="feedback"
           id="user-feedback"
           placeholder="Comment"
         ></textarea>
       </label>
-      <button class="modal__button" type="submit">Submit</button>
+      <button class="modal__button--disabled" type="submit">Submit</button>
     </form>
   </div>
 </div>
