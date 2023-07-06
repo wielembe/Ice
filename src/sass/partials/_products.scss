@@ -41,6 +41,7 @@
     text-align: center;
   }
 }
+
 .ice-cream {
   width: 280px;
   height: 420px;
@@ -154,3 +155,12 @@
   opacity: 0;
   scale: 0;
 }
+
+
+//.ice-cream__title::before {
+//content: url(../images/products/ice-cream_480\ 1x.jpg);
+//width: 200px;
+//height: 200px;
+//border-radius: 100px;
+//}
+
