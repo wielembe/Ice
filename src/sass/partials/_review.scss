@@ -1,0 +1,35 @@
+//.swiper {
+//display: flex;
+//width: 600px;
+//height: 300px;
+//}
+
+.review {
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__pic {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    border-radius: 50%;
+  }
+
+  &__opinion {
+    border-radius: 10px;
+    margin-top: 32px;
+
+    background: #84a178;
+    margin: 20px auto 0;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    padding-right: 39px;
+    padding-left: 39px;
+    margin: auto;
+  }
+}

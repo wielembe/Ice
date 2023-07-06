@@ -17,6 +17,9 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
       rel="stylesheet"
     />
+
+    <!-- poniżej link do swipera - customer reviews-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   </head>
   <body>
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. TO JEST TEST-->
@@ -26,9 +29,12 @@
 
     <include src="./partials/advantages.html"></include>
     <include src="./partials/about.html"></include>
+    <include src="./partials/review.html"></include>
     <!--<include src="./partials/example.html"></include> Na razie nie wyrzucam, ale zakomentowuję, bo już powoli oglądajmy naszą stronę-->
 
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
     <script src="./index.js" type="module"></script>
+    <!-- poniżej skrypt do Customer Review - swiper-->
+    <script src="./review.js" type="module"></script>
   </body>
 </html>
