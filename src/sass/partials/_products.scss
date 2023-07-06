@@ -9,14 +9,51 @@
 
   &__label {
     color: #131313;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: uppercase;
   }
   &__title {
     color: #131313;
+    font-family: Seymour One;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.26;
+    text-transform: uppercase;
+  }
+  &__name {
+    color: #131313;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.22;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.77;
+    text-align: center;
   }
 }
 
-.ice-cream__title::before {
+.ice-cream::before {
   content: url(./images/products/ice-cream_480\ 1x.jpg);
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+.ice-coffee::before {
+  content: url(./images/products/ice-coffee_480\ 1x.jpg);
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+.milkshakes::before {
+  content: url(./images/products/milkshakes_480\ 1x.jpg);
   width: 200px;
   height: 200px;
   border-radius: 100px;

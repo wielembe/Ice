@@ -38,25 +38,35 @@
         <use href="./images/icons-ice_cream.svg#icon-icon-close"></use>
       </svg>
     </button>
-    <p class="modal-form__title">Chololate icecream</p>
+    <p class="modal__title">Chololate icecream</p>
     <img class="modal__img" alt="gałka lodów czekoladowych" src="./images/products/products-modal_mobile 1x.jpg"/>
-    <ul>
-      <li>320 kcal
+    <ul class="value">
+      <li class="value__item">320 kcal
       </li>
-      <li>
+      <li class="value__item">
         4g Prote...
       </li>
-      <li>8,2g Fats</li>
-      <li>40,4g Carbs</li>
+      <li class="value__item">8,2g Fats</li>
+      <li class="value__item">40,4g Carbs</li>
     </ul>
-    <p>Ingredients</p>
+    <p class="ingredients">Ingredients</p>
+    <ul class="ingredients__list">
+      <li class="ingredients__item">
+        Milk 100ml
+      </li>
+      <li class="ingredients__item">Belgian chocolate 20g</li>
+      <li class="ingredients__item">Cream 150ml</li>
+      <li class="ingredients__item">Cocoa powder 30g</li>
+      <li class="ingredients__item">Sugar 40g</li>
+      <li class="ingredients__item">Vanilla sugar 10g</li>
+    </ul>
     
     <form action="javascript:void(0);" method="POST"></form>
-    <form class="modal__form">
-          <input class="modal__input" type="text" name="name" id="user-name" placeholder="Name"required />
-          <input class="modal__input" type="tel" name="phone" id="user=phone" placeholder="Phone"required />
+    <form class="modal__form form">
+          <input class="form__input" type="text" name="name" id="user-name" placeholder="Name"required />
+          <input class="form__input" type="tel" name="phone" id="user=phone" placeholder="Phone"required />
         <textarea
-          class="feedback__text"
+          class="form__feedback"
           name="feedback"
           id="user-feedback"
           placeholder="Comment"
