@@ -61,19 +61,19 @@
   background-color: #d6936d;
 }
 .ice-cream::before {
-  content: '';
+  content: url(../images/products/ice-cream_480@1x.jpg);
   width: 200px;
   height: 200px;
   border-radius: 100px;
 }
 .ice-coffee::before {
-  content: '';
+  content: url(../images/products/ice-coffee_480@1x.jpg);
   width: 200px;
   height: 200px;
   border-radius: 100px;
 }
 .milkshakes::before {
-  content: '';
+  content: url(../images/products/milkshakes_480@1x.jpg);
   width: 200px;
   height: 200px;
   border-radius: 100px;
@@ -160,11 +160,9 @@
   scale: 0;
 }
 
-
 //.ice-cream__title::before {
 //content: url(../images/products/ice-cream_480\ 1x.jpg);
 //width: 200px;
 //height: 200px;
 //border-radius: 100px;
 //}
-
