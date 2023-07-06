@@ -1,22 +1,22 @@
-//.products {
-//background-image: url(../images/Backgroud_mobile\ 1x.jpg);
-//background-position: center;
-//background-size: cover;
-//background-repeat: no-repeat;
-//width: 100%;
-//margin: 0 auto;
-//align-items: center;
+.products {
+  background-image: url(../images/Backgroud_mobile\ 1x.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
 
-//&__label {
-//color: #131313;
+  &__label {
+    color: #131313;
     font-family: Montserrat;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.2;
     text-transform: uppercase;
-//}
-//&__title {
-//color: #131313;
+  }
+  &__title {
+    color: #131313;
     font-family: Seymour One;
     font-weight: 400;
     font-size: 30px;
@@ -37,24 +37,24 @@
     font-size: 14px;
     line-height: 1.77;
     text-align: center;
-//}
-//}
+  }
+}
 
-//.ice-cream::before {
+.ice-cream::before {
   content: url();
   width: 200px;
   height: 200px;
   border-radius: 100px;
 }
 .ice-coffee::before {
-//content: url(.);
+  content: url(.);
   width: 200px;
   height: 200px;
   border-radius: 100px;
 }
 .milkshakes::before {
   content: url();
-//width: 200px;
-//height: 200px;
-//border-radius: 100px;
-//}
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
