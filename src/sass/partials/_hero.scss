@@ -79,6 +79,20 @@
     padding-top: 11px;
     font-size: 12px;
     font-weight: 600;
+    z-index: 40;
+
+    &:hover {
+      border-color: #0a8817;
+    }
+    &:focus {
+      border-color: #0a8817;
+      color: #fcfcfc;
+    }
+    &--disabled {
+      border-color: #ababab;
+      pointer-events: none;
+      color: #000000;
+    }
 
     @include desktop {
       padding-top: 12px;
@@ -93,6 +107,18 @@
     font-weight: 600;
     text-decoration: underline;
     padding-top: 11px;
+    z-index: 40;
+
+    &:hover {
+      color: #0a8817;
+    }
+    &:focus {
+      color: #fcfcfc;
+    }
+    &--disabled {
+      color: #ababab;
+      pointer-events: none;
+    }
 
     @include desktop {
       padding-top: 12px;
@@ -198,6 +224,7 @@
       line-height: 140%;
       width: 165px;
       padding-top: 27px;
+      margin-top: 0px;
     }
 
     @include desktop {
@@ -209,11 +236,29 @@
     }
   }
 
+  &__arrow {
+    display: none;
+
+    @include tablet {
+      fill: $textWhite;
+      width: 40px;
+      height: 16px;
+      display: block;
+      margin-top: 29px;
+    }
+
+    @include desktop {
+      margin-top: 24px;
+    }
+  }
+
   &__main-img {
     position: absolute;
     bottom: 0px;
     right: 60px;
     z-index: 99;
+    width: 177px;
+    height: 217px;
 
     @include mobile {
       width: 218px;
@@ -264,6 +309,17 @@
 
     @include desktop {
       display: none;
+    }
+  }
+
+  &__dots-desktop {
+    display: none;
+
+    @include desktop {
+      display: flex;
+      position: absolute;
+      bottom: 0px;
+      left: calc((100% - 1168px) / 2 - 16px);
     }
   }
 }
