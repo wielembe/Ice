@@ -1,59 +1,97 @@
-.gallery {
-  max-width: 768px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+.container {
+  max-width: 380px;
+  width: 100%;
   margin: 0 auto;
-  background-image: url(../images/Backgroud_mobile@1x.jpg);
+  padding: 0 15px;
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }}
+
+.gallery {
+  margin: 0 auto;
+  padding: 0px 15px;
+  background-image: url(../images/Backgroud_mobile@1x.jpg);  
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  margin: 0 auto;
-  opacity: 0.5;
-  position: absolute;
-  &__image {
-    position: absolute;
-    opacity: 1;
-    &--img {
-      flex-shrink: 0;
-      position: relative;
-      bottom: 10 px;
-      max-width: 280px;
+  max-width: 767px;
+  display: flex;
+    justify-content: center;
+  
+  
+  @include tablet {
+    min-width: 768px;
+    max-width: 1199px;    
+    background-size: cover;
+    background-position: 50% 50%;
+    }
+    @include desktop {
+    background-size: cover;
+    min-width: 1200px;
+    max-width: 1600px;
+    background-position: 50% 50%;
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url("../images/Backgroud_mobile@2x.jpg");
+  }
+  }
+
+  .gallery-picture {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  padding: 0px 15px;
+  
+    
+    
+    &__image {        
+      max-width: 440px;
       border-radius: 8px;
-      padding: 38px 20px 80px 20px;
+      border: none;
+      margin: 0 auto;
+      margin-top:-36px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: nowrap; 
+      position:absolute;
+      padding-bottom: 80px;
+      
+      
+    
+
+      @include tablet {
+            max-width: 704px;
+            margin-top:-49px;
+            display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: nowrap; 
+      position:absolute;
+            
     }
-  }
-}
-@media screen and (min-width: 768px) {
-  .gallery {
-    background-image: url(../images/Background_tablet@1x.jpg);
-    &__image {
-      position: fixed;
-      &--img {
-        flex-shrink: 0;
-        position: fixed;
-        max-width: 440px;
-        border-radius: 18px;
-      }
+    @include desktop {
+      
+      max-width: 1013px;
+      margin-top:-98px;
+      position:absolute;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: nowrap; 
+
     }
-  }
-}
-@media screen and (min-width: 1200px) {
-  .gallery {
-    background-image: url(../images/Backgroud_desktop@1x.jpg);
-    &__image {
-      position: fixed;
-      &--img {
-        flex-shrink: 0;
-        position: fixed;
-        max-width: 1113px;
-        border-radius: 24px;
-        padding-left: 94px;
-        padding-right: 94px;
-      }
-    }
-  }
-}
+  }}
+
+
 .visually-hidden:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
