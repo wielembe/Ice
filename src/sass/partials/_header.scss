@@ -124,3 +124,128 @@
     height: 12px;
   }
 }
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 998;
+  background-color: $firstBrandColor;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+  &__header {
+    padding: 12px 20px 51px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    @include mobile {
+      padding-bottom: 40px;
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+    @include tablet {
+      padding-bottom: 72px;
+      padding-left: 32px;
+      padding-right: 32px;
+      padding-top: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    list-style: none;
+    align-items: center;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 110px;
+
+    @include mobile {
+      margin-bottom: 114px;
+    }
+
+    @include tablet {
+      gap: 40px;
+    }
+  }
+
+  &__link {
+    font-size: 32px;
+    font-weight: 700;
+    color: $textWhite;
+
+    &--accent {
+      color: $textBlack;
+    }
+
+    @include tablet {
+      font-size: 48px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $secondaryBrandColor;
+    }
+  }
+
+  &__button {
+    background-color: $secondaryBrandColor;
+    width: 152px;
+    height: 42px;
+    border-style: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin: 0 auto;
+
+    &:hover {
+      background-color: #0a8817;
+    }
+    &:focus {
+      background-color: #0a8817;
+      color: #fcfcfc;
+      fill: #fcfcfc;
+    }
+    &--disabled {
+      background-color: #ababab;
+      color: #000000;
+      pointer-events: none;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__text {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &__svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-toggle {
+  color: $textWhite;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  width: 32px;
+  height: 32px;
+}
