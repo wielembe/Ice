@@ -8,11 +8,16 @@
 @use './partials/advantages';
 @use './partials/main-styles';
 @use './partials/vars';
+@use './partials/hero';
 
 @import './mixins';
 
 @import './partials/header';
+@import './partials/gallery';
+@import './partials/footer';
+
 @import './partials/buttons';
+
 @import './partials/products';
 @import './partials/about';
 @import './partials/review';
