@@ -1,8 +1,15 @@
-//.swiper {
-//display: flex;
-//width: 600px;
-//height: 300px;
-//}
+.swiper {
+  display: flex;
+  width: 600px;
+  height: 300px;
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+}
 
 .review {
   display: flex;
@@ -11,19 +18,12 @@
   padding: 0;
   justify-content: center;
 
-  &__list {
-    list-style: none;
-    padding: 0;
-    justify-content: center;
-    //width: 280px;
-  }
-
-  &__slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-  }
+  // &__list {
+  // list-style: none;
+  //padding: 0;
+  //justify-content: center;
+  //width: 280px;
+  //}
 
   &__pic {
     display: flex;
