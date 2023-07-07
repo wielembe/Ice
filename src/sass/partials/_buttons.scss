@@ -1,130 +1,109 @@
-.products-button {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  font-style: normal;
+.button-products {
   font-weight: 600;
-  line-height: normal;
-  color: #000;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0);
-  padding: 11px 26px 11px 26px;
-  cursor: pointer;
+  min-width: 108px;
+  height: 38px;
+  font-size: 12px;
   border: 2px solid #f8d24e;
-  margin: 0 auto;
   border-radius: 8px;
-  max-width: 108px;
-  max-height: 38px;
-
+  background: none;
+  @media screen and (min-width: 1200px) {
+    height: 42px;
+    min-width: 134px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
   &:hover {
-    border: 2px solid #0a8817;
+    border-color: #0a8817;
   }
-}
-@media screen and (min-width: 1200px) {
-  .products-button {
-    max-width: 134px;
-    max-height: 42px;
-    font-size: 14px;
-    padding: 12px 34px 12px 34px;
-    font-size: 14px;
-    line-height: 0.78;
-    :hover {
-      border: 2px solid #0a8817;
-    }
-    :focus {
-      border: 2px solid #0a8817;
-      color: #fcfcfc;
-    }
-    :disabled {
-      border: 2px solid #ababab;
-    }
+  &:focus {
+    border-color: #0a8817;
+    color: #fcfcfc;
+  }
+  &--disabled {
+    @extend .button-products;
+    border-color: #ababab;
+    pointer-events: none;
+    color: #000000;
   }
 }
 
-.read-more-button {
-  color: #000;
-  font-family: 'Montserrat', sans-serif;
+.button-read-more {
+  font-weight: 600;
+  min-width: 164px;
+  height: 38px;
   font-size: 14px;
-  font-weight: 700;
-  line-height: 18px;
-  background-color: #f8d24e;
   border: none;
   border-radius: 10px;
-  max-width: 164px;
-  max-height: 42px;
-  margin-top: 24px;
-  padding: 12px 30px 12px 30px;
-  cursor: pointer;
+  background: #f8d24e;
   &:hover {
     background-color: #0a8817;
   }
   &:focus {
     background-color: #0a8817;
     color: #fcfcfc;
+    fill: #fcfcfc;
   }
-  &:disabled {
+  &--disabled {
+    @extend .button-read-more;
     background-color: #ababab;
-  }
-  &--svg {
-    position: relative;
-    top: 4px;
-    left: 4px;
-    width: 14px;
-    height: 14px;
-    &:focus {
-      color: #fcfcfc;
-    }
+    color: #000000;
+    pointer-events: none;
   }
 }
-.how-its-made-button {
-  color: #f8d24e;
-  text-align: center;
-  font-family: Montserrat, sans-serif;
-  font-size: 14px;
-  font-style: normal;
+
+.button-how-its-made {
   font-weight: 600;
-  line-height: normal;
-  text-decoration-line: underline;
-  max-width: 106px;
-  max-height: 24px;
-  background-color: rgba(0, 0, 0, 0);
-  padding: 12px 21px 12px 22px;
+  font-size: 12px;
   border: none;
+  background: none;
+  text-decoration: underline;
+  color: #f8d24e;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
   &:hover {
     color: #0a8817;
   }
   &:focus {
     color: #fcfcfc;
   }
-  &:disabled {
+  &--disabled {
+    @extend .button-how-its-made;
     color: #ababab;
+    pointer-events: none;
   }
 }
-@media screen and (min-width: 1200px) {
-  .how-its-made-button {
-    font-size: 14px;
-    max-width: 154px;
-    max-height: 40px;
-    padding: 12px 21px 12px 22px;
+
+.button-our-location {
+  @extend .button-read-more;
+  width: 196px;
+  &--disabled {
+    @extend .button-our-location;
+    background-color: #ababab;
+    color: #000000;
+    pointer-events: none;
   }
 }
-.locations_button {
-  @extend .read-more-button;
-  padding: 12px 20px 12px 20px;
-}
-.franchise_button {
-  @extend .products-button;
-  padding: 12px 50px 20px 50px;
-  max-width: 196px;
-  max-height: 42px;
+
+.button-franchise {
+  @extend .button-products;
+  width: 196px;
   font-size: 14px;
-  &--svg {
-    position: relative;
-    top: 2px;
-    left: 4px;
-    width: 14px;
-    height: 14px;
+  &--disabled {
+    @extend .button-franchise;
+    border-color: #ababab;
+    pointer-events: none;
+    color: #000000;
   }
 }
-.buy-now_button {
-  @extend .read-more-button;
+
+.button-buy-now {
+  @extend .button-read-more;
+  width: 152px;
+  &--disabled {
+    @extend .button-buy-now;
+    background-color: #ababab;
+    color: #000000;
+    pointer-events: none;
+  }
 }
