@@ -5,13 +5,13 @@ const swiper = new Swiper('.swiper', {
 
   // If we need pagination
   pagination: {
-    el: '.review__pagination',
+    el: '.swiper-pagination',
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.review__pagination',
-    prevEl: '.review__pagination',
+    nextEl: '.swiper-pagination',
+    prevEl: '.swiper-pagination',
   },
 
   // And if we need scrollbar
