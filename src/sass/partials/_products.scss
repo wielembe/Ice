@@ -1,5 +1,8 @@
 @import '../mixins';
 @import './vars';
+ul {
+  list-style: none;
+}
 .container {
   max-width: 380px;
   width: 100%;
@@ -108,6 +111,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
+    cursor: pointer;
   }
 }
 
@@ -136,19 +140,19 @@
   background-color: #d6936d;
 }
 .ice-cream::before {
-  content: url(../images/products/ice-cream_480@1x.jpg);
+  content: url(../images/products/ice-cream_mobile@1x.png);
   width: 200px;
   height: 200px;
   border-radius: 100px;
 }
 .ice-coffee::before {
-  content: url(../images/products/ice-coffee_480@1x.jpg);
+  content: url(../images/products/ice-coffee_mobile@1x.png);
   width: 200px;
   height: 200px;
   border-radius: 100px;
 }
 .milkshakes::before {
-  content: url(../images/products/milkshakes_480@1x.jpg);
+  content: url(../images/products/milkshakes_mobile@1x.png);
   width: 200px;
   height: 200px;
   border-radius: 100px;
@@ -227,9 +231,10 @@
   gap: 9px;
   list-style-position: inside;
   margin-top: 22px;
+  text-align: center;
+  justify-content: center;
   @include desktop {
     margin-top: 24px;
-    gap: 20px;
   }
   &__item {
     width: 53px;
@@ -240,9 +245,7 @@
     font-weight: 400;
     font-size: 10px;
     line-height: 1.22;
-    color: $textBlack;
-    margin: 0 auto;
-    justify-content: flex-end;
+    color: #131313;
     @include desktop {
       font-size: 12px;
       width: 65px;
@@ -255,20 +258,32 @@
     border-radius: 50px;
     background-color: #9cbe8f;
     border: 2px solid #9cbe8f;
-    text-align: center;
+    position: relative;
+    top: -1px;
+    left: 3px;
+    box-shadow: 0 12px 25px #9cbe8f;
+    @include desktop {
+      width: 53px;
+      height: 53px;
+    }
+  }
+  &__number {
+    position: relative;
+    top: 6px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 10px;
     line-height: 2.8;
-    color: $textBlack;
+    color: #131313;
     margin: 0 auto;
-    display: flex;
-    justify-content: flex-start;
     @include desktop {
       font-size: 12px;
-      width: 53px;
-      height: 53px;
+      line-height: 2.3;
     }
+  }
+  &__legend {
+    position: relative;
+    top: 24px;
   }
 }
 .ingredients {
@@ -276,11 +291,19 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1.4;
-  color: $textBlack;
+  color: #131313;
   text-align: center;
-
+  &__box {
+    margin-left: 20px;
+    margin-right: 20px;
+    @include desktop {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
   &__list {
     flex-direction: column;
+    gap: 11px;
   }
   &__item {
     display: flex;
@@ -289,7 +312,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.76;
-    color: $textBlack;
+    color: #131313;
   }
 }
 .modal__form {
