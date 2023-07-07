@@ -47,7 +47,6 @@
     color: $textWhite;
     font-family: 'Seymour One', sans-serif;
     font-size: 30px;
-    font-weight: 900;
     letter-spacing: 0.04em;
     text-align: center;
     text-transform: uppercase;
@@ -104,8 +103,10 @@
     color: $textWhite;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
+    font-weight: 300;
     line-height: 1.76;
     letter-spacing: 0.04em;
+
     text-align: center;
     margin: 0 0 4px;
     &:nth-child(3) {
@@ -156,8 +157,22 @@
     }
   }
 }
+.about-is-hidden {
+  pointer-events: none;
+  visibility: none;
+  opacity: 0;
+  transform: scale(0);
+}
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  cursor: not-allowed;
+  transform: scale(1);
+}
 .read-more-modal {
-  position: relative;
+  position: fixed;
+  inset: 0;
   margin: auto;
   background: $textWhite;
   border: 2px solid $secondaryBrandColor;
@@ -183,7 +198,6 @@
     width: max-content;
     font-family: 'Seymour One', sans-serif;
     font-size: 16px;
-    font-weight: 700;
     line-height: 24px;
     margin: 0 auto 20px;
     @include desktop {
