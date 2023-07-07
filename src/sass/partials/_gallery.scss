@@ -1,22 +1,59 @@
 .gallery {
-  display: flex;
-  flex-direction: column;
-  max-width: 240px;
+  max-width: 768px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   margin: 0 auto;
-  background-image: url('../images/Backgroud_mobile@1x.jpg');
+  background-image: url(../images/Backgroud_mobile@1x.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   margin: 0 auto;
+  opacity: 0.5;
+  position: absolute;
   &__image {
-    position: fixed;
+    position: absolute;
+    opacity: 1;
     &--img {
-      position: fixed;
+      flex-shrink: 0;
+      position: relative;
+      bottom: 10 px;
+      max-width: 280px;
+      border-radius: 8px;
+      padding: 38px 20px 80px 20px;
     }
   }
 }
-
+@media screen and (min-width: 768px) {
+  .gallery {
+    background-image: url(../images/Background_tablet@1x.jpg);
+    &__image {
+      position: fixed;
+      &--img {
+        flex-shrink: 0;
+        position: fixed;
+        max-width: 440px;
+        border-radius: 18px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    background-image: url(../images/Backgroud_desktop@1x.jpg);
+    &__image {
+      position: fixed;
+      &--img {
+        flex-shrink: 0;
+        position: fixed;
+        max-width: 1113px;
+        border-radius: 24px;
+        padding-left: 94px;
+        padding-right: 94px;
+      }
+    }
+  }
+}
 .visually-hidden:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
