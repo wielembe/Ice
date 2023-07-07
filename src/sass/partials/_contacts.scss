@@ -1,0 +1,15 @@
+.contacts {
+    
+&__list {
+    display: flex;
+    flex-direction: column;
+}
+&__item {
+    width: 280px;
+    height: 412px;
+    border-radius: 10px;
+    border-color: #FCFCFC;
+    
+}
+
+}
