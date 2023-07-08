@@ -9,7 +9,7 @@
 @use './partials/main-styles';
 @use './partials/vars';
 @use './partials/hero';
-
+@use './partials/contacts';
 @import './mixins';
 
 @import './partials/header';
@@ -17,5 +17,6 @@
 @import './partials/products';
 @import './partials/about';
 @import './partials/review';
+@import './partials/contacts';
 
 //@import './example';
