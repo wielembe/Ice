@@ -9,7 +9,11 @@
     height: 412px;
     border-radius: 10px;
     border-color: #FCFCFC;
-    
+
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 }
