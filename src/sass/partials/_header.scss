@@ -249,3 +249,17 @@
   width: 32px;
   height: 32px;
 }
+
+.header-is-hidden {
+  pointer-events: none;
+  visibility: none;
+  opacity: 0;
+  transform: scale(0);
+}
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  cursor: not-allowed;
+  transform: scale(1);
+}

@@ -19,7 +19,7 @@
       <li class="header__nav-item">Our products</li>
       <li class="header__nav-item">Contact</li>
     </nav>
-    <button class="buy-now">
+    <button class="buy-now" header-data-modal-open type="button">
       <span class="buy-now__text">Buy now</span>
       <svg class="buy-now__svg">
         <use href="./images/icons-ice_cream.svg#icon-arrow-right-bold"></use>
@@ -57,10 +57,21 @@
     <li><a class="menu-container__link">Contact</a></li>
   </ul>
 
-  <button type="button" class="menu-container__button">
+  <button type="button" header-data-modal-open class="menu-container__button">
     <span class="menu-container__text">Buy now</span>
     <svg class="menu-container__svg">
       <use href="./images/icons-ice_cream.svg#icon-arrow-right-bold"></use>
     </svg>
   </button>
+</div>
+
+<div class="modal-backdrop header-is-hidden" header-data-modal>
+  <div class="read-more-modal">
+    <button class="read-more-modal__close-button" header-data-modal-close>
+      <svg width="30" height="30">
+        <line x1="9.5" y1="9.5" x2="20.5" y2="20.5" stroke="#131313" stroke-width="1" />
+        <line x1="9.5" y1="20.5" x2="20.5" y2="9.5" stroke="#131313" stroke-width="1" />
+      </svg>
+    </button>
+  </div>
 </div>
