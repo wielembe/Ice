@@ -171,7 +171,15 @@
     flex-shrink: 0;
     background-color: #f8d24e;
     fill: #84a278;
+
+    &:hover,
+    &:focus {
+      fill: #e1e1e1;
+      background-color: #f8d24e;
+      border-radius: 50%;
+    }
   }
+
   &__contact {
     color: #131313;
     text-align: right;
