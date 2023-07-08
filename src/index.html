@@ -14,21 +14,32 @@
       referrerpolicy="no-referrer"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Seymour+One&display=swap"
       rel="stylesheet"
     />
+
+    <!-- poniżej link do swipera - customer reviews-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. TO JEST TEST-->
+    <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. ST TEST-->
     <include src="./partials/header.html"></include>
-
+    <include src="./partials/hero.html"></include>
     <include src="./partials/products.html"></include>
+    <include src="./partials/buttons.html"></include>
 
     <include src="./partials/about.html"></include>
     <include src="./partials/advantages.html"></include>
     <!--<include src="./partials/example.html"></include> Na razie nie wyrzucam, ale zakomentowuję, bo już powoli oglądajmy naszą stronę-->
-
+    <include src="./partials/footer.html"></include>
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
     <script src="./index.js" type="module"></script>
+    <!-- Poniżej skrypt do okna modalnego sekcji About -->
+    <script src="./js/about/about-modal.js" type="module"></script>
+    <!-- poniżej skrypt do Customer Review - swiper-->
+    <script src="./swiper.js" type="module"></script>
+    <script defer src="./menu-modal.js" type="modul"></script>
   </body>
 </html>
