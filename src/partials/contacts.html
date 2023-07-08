@@ -1,16 +1,39 @@
 <section class="contacts">
+ <div class="container contacts__wrapper">
+   <ul class="contacts__list">
+      <li class="contacts__item">
+        <button class="contacts__header">cafe</button>
+        <address class="address">
+            <span class="address__header">Chicago</span><br />
+            <a class="address__link" href="https://goo.gl/maps/STne4sjAjZ7zSHTR6">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a>
+        </address>
+
+      </li>
+      <li class="contacts__item">
+        <button class="contacts__header">foodtrack</button><address class="address">
+            <span class="address__header">Los Angeles</span><br />
+            <a class="address__link" href="https://goo.gl/maps/VBDssGxzNaqiNqQP7">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a>
+        </address>
+
+
+      </li>
+      <li class="contacts__item">
+        <button class="contacts__header">cafe</button>
+        <address class="address">
+            <span class="address__header">New York</span><br />
+            <a class="address__link" href="https://goo.gl/maps/vRBaTHnEo7QvAA4T8">726 Sterling Pl, Brooklyn, NY 11222, USA</a>
+        </address>
+
+      </li>
+   </ul>
+
+    <!-- <ul class="contacts-bts__list">
+    <li><button class="button">Our Locations ></button></li>
+    <li><button class="button">Franchise ></button></li>
+
+    </ul> -->
 <div class="container contacts__wrapper">
-<ul class="contacts__list">
-    <li class="contacts__item">
 
-    </li>
-    <li class="contacts__item">
-
-    </li>
-    <li class="contacts__item">
-
-    </li>
-</ul>
 
 <ul class="contacts-bts__list">
     <li><button class="button">Our Locations ></button></li>
@@ -33,7 +56,7 @@
   <div class="modalSignup">
     <button type="button" class="close-btn" data-modal-close>
         <svg class="xclose" width="20px" height="20px">
-          <use href="../images/icons-ice_cream.svg#icon-icon-close"></use>
+          <use href="./images/icons-ice_cream.svg#icon-icon-close"></use>
         </svg>
       </button>
 
@@ -69,4 +92,57 @@
 </div>
 </div>
     
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modalMap">
+        <h3 class="modalMap__header">Our Locations</h3>
+         <div class="modalMap__location"></div>
+         <button type="button" class="modalSignup__button">Signup</button>
+
+    </div>
+  
+
+
+   <div class="backdrop is-hidden" data-modal>
+    <div class="modalSignup">
+      <button type="button" class="close-btn" data-modal-close>
+        <svg class="xclose" width="20px" height="20px">
+          <use href="./images/icons-ice_cream.svg#icon-icon-close"></use>
+        </svg>
+      </button>
+
+    <form class="modalSignup__form">
+      <h3 class="modalSignup__header">Thank you for your interest in owning an Ice Cream shop</h3>
+
+       <p class="modalSignup__text">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.</p>
+      <label class="modalSignup__label">
+        <input type="name" minlength="3" name="username" class="modalSignup__input" placeholder="Name" />
+      </label>
+
+      <label class="modalSignup__label">
+        <input type="tel" name="phone-number" placeholder="Phone" class="modalSignup__input"required/>
+      </label>
+
+       <label class="modalSignup__label">
+         <input type="email"
+              name="user-email"
+              class="modalSignup__input"
+              placeholder="Email"
+              required />
+        </label>
+ 
+        <label class="modalSignup__label">
+        <textarea
+        name="comment"
+        rows="3"
+        class="modalSignup__textarea"
+        placeholder="Comment"
+        ></textarea>
+        </label>    
+          <button type="button" class="modalSignup__button">Signup</button>
+          
+
+    </form>
+   </div>
+  </div>
 </section>
