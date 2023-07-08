@@ -52,6 +52,7 @@ ul {
       text-transform: uppercase;
       text-align: center;
       padding-top: 60px;
+      margin: 0;
       @include tablet {
         font-size: 22px;
       }
@@ -93,8 +94,11 @@ ul {
       line-height: 1.22;
       text-transform: uppercase;
       text-align: center;
+      margin-top: 123px;
+
       @include tablet {
         font-size: 22px;
+        margin-top: 108px;
       }
       @include desktop {
         font-size: 30px;
@@ -107,6 +111,7 @@ ul {
       font-size: 14px;
       line-height: 1.77;
       letter-spacing: 0.04em;
+      width: 200px;
       text-align: center;
       margin-top: 40px;
       @include desktop {
@@ -126,7 +131,7 @@ ul {
       border: none;
       margin: 0 auto;
       display: flex;
-      justify-content: flex-end;
+      align-items: flex-end;
       cursor: pointer;
     }
   }
@@ -136,15 +141,17 @@ ul {
   height: 420px;
   border-radius: 24px;
   margin: 0 auto;
-  margin-top: 250px;
+  margin-top: 168px;
   margin-bottom: 60px;
   @include tablet {
     width: 224px;
     height: 548px;
+    margin-top: 200px;
   }
   @include desktop {
     width: 370px;
     height: 536px;
+    margin-top: 303px;
   }
   &--ice-cream {
     background-color: #aec6a5;
@@ -161,51 +168,79 @@ ul {
   height: 200px;
   border-radius: 50%;
   position: absolute;
-  translate: 40% -50%;
+  translate: 20% -50%;
+  z-index: 20;
+  @include tablet {
+    translate: 5% -70%;
+  }
+  @include desktop {
+    width: 302px;
+    height: 302px;
+    translate: 25% -40%;
+  }
 }
 .ice-cream::before {
-  box-shadow: 0 8px 30px rgba(10, 136, 23, 0.25);
-  background-image: linear-gradient(rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
-}
-.ice-coffee {
+  content: '';
   width: 200px;
   height: 200px;
-  border-radius: 50%;
   position: absolute;
-  translate: 40% -50%;
+  border-radius: 50%;
+  top: 11px;
+  z-index: -10;
+  box-shadow: 0 8px 30px rgba(10, 136, 23, 0.25);
+  background-image: linear-gradient(rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+  @include tablet {
+    top: 12px;
+  }
+  @include desktop {
+    top: 16px;
+  }
+}
+.ice-coffee {
+  @extend .ice-cream;
 }
 .ice-coffee::before {
+  content: '';
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 50%;
+  top: 16px;
+  z-index: -10;
   box-shadow: 0 8px 30px rgba(153, 114, 23, 0.25);
   background-image: linear-gradient(rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
 }
 .milkshakes {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  position: absolute;
-  translate: 40% -50%;
+  @extend .ice-cream;
 }
 .milkshakes::before {
+  content: '';
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 50%;
+  top: 16px;
+  z-index: -10;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
 }
 .backdrop {
   position: fixed;
   inset: 0;
-  z-index: 9999;
+  z-index: 9;
   cursor: not-allowed;
   transform: scale(1);
   background-color: #00000033;
 }
 .products-modal {
-  position: fixed;
-  inset: 0;
+  position: relative;
   margin: auto;
   background-color: $textWhite;
   border: 2px solid $secondaryBrandColor;
   border-radius: 10px;
   width: 280px;
   height: 968px;
+  cursor: auto;
   @include desktop {
     width: 568px;
     height: 996px;
