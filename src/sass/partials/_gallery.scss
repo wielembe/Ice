@@ -9,10 +9,7 @@
   @include desktop {
     max-width: 1200px;
   }}
-img {
-  display: block;
-  width: 100%;
-  height: auto;}
+
 
 .gallery {
   margin: 0 auto;  
@@ -66,6 +63,9 @@ place-content: center;
       margin: 0 auto;
       margin-top:-36px;      
       position:absolute;
+      display: block;
+  width: 100%;
+  height: auto;
       
     @include tablet {
     min-width: 768px;
