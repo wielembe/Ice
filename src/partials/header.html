@@ -4,16 +4,20 @@
   </svg>
 
   <div class="header__wrapper">
-    <button class="header__menu">
+    <button class="header__menu js-open-menu">
       <svg class="header__icon">
-        <use href="./images/icons-ice_cream.svg#icon-eva_menu-fill"></use>
+        <use
+          href="./images/icons-ice_cream.svg#icon-eva_menu-fill"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        ></use>
       </svg>
     </button>
     <nav class="header__nav">
-      <li>Home</li>
-      <li>How it&apos;s made?</li>
-      <li>Our products</li>
-      <li>Contact</li>
+      <li class="header__nav-item">Home</li>
+      <li class="header__nav-item">How it&apos;s made?</li>
+      <li class="header__nav-item">Our products</li>
+      <li class="header__nav-item">Contact</li>
     </nav>
     <button class="buy-now">
       <span class="buy-now__text">Buy now</span>
@@ -23,3 +27,40 @@
     </button>
   </div>
 </header>
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <div class="menu-container__header">
+    <svg class="header__logo">
+      <use href="./images/icons-ice_cream.svg#icon-Logo"></use>
+    </svg>
+
+    <button class="menu-toggle js-close-menu">
+      <svg
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+  </div>
+  <ul class="menu-container__list">
+    <li><a class="menu-container__link">Home</a></li>
+    <li><a class="menu-container__link menu-container__link--accent">How it&apos;s made?</a></li>
+    <li><a class="menu-container__link">Our products</a></li>
+    <li><a class="menu-container__link">Contact</a></li>
+  </ul>
+
+  <button type="button" class="menu-container__button">
+    <span class="menu-container__text">Buy now</span>
+    <svg class="menu-container__svg">
+      <use href="./images/icons-ice_cream.svg#icon-arrow-right-bold"></use>
+    </svg>
+  </button>
+</div>
