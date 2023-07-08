@@ -86,10 +86,19 @@
       padding: 40px 40px;
     }
   }
+  &__line {
+    width: 100%;
+    border: 0.4 solid #e1e1e1;
+  }
 }
 .address {
   width: 190px;
   height: 70px;
+  margin-bottom: 24px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
 
   &__header {
     font-family: Montserrat;
