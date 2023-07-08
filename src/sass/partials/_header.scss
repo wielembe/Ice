@@ -249,3 +249,109 @@
   width: 32px;
   height: 32px;
 }
+
+.is-hidden {
+  pointer-events: none;
+  visibility: none;
+  opacity: 0;
+  transform: scale(0);
+}
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  cursor: not-allowed;
+  transform: scale(1);
+  background-color: #0a0a0a6a;
+}
+
+.buy {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  background: $textWhite;
+  border: 2px solid $secondaryBrandColor;
+  border-radius: 10px;
+  width: 280px;
+
+  cursor: auto;
+  overflow: auto;
+
+  &__close-button {
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    position: absolute;
+    top: 2%;
+    left: 84%;
+    cursor: pointer;
+  }
+
+  &__tittle {
+    color: $textBlack;
+    text-align: center;
+    font-size: 16px;
+    font-family: Seymour One;
+    font-weight: 400;
+    margin-top: 28px;
+    margin-bottom: 83px;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__radios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 85px;
+    border: none;
+  }
+
+  &__ice-cream,
+  &__ice-coffe,
+  &__milkshake {
+    width: 132px;
+    height: 136px;
+    border-radius: 15px;
+    position: relative;
+    border: 2px solid #96af8c;
+    box-shadow: 0px 5.2602739334106445px 19.72602653503418px 0px rgba(212, 20, 67, 0.1);
+
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: none;
+  }
+
+  &__picture {
+    width: 132px;
+    height: 132px;
+    position: absolute;
+    border-radius: 50%;
+
+    background-image: url('../images/header/ice-cream-132.jpg');
+    top: -50%;
+  }
+
+  &__paragraph {
+    color: $textBlack;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+    padding-top: 96px;
+    margin: 0px;
+  }
+}
