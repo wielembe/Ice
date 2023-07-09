@@ -78,6 +78,11 @@
     }
   }
 
+  &__nav-item {
+    color: $textWhite;
+    text-decoration: none;
+  }
+
   &__nav-item:hover,
   &__nav-item:focus {
     color: $secondaryBrandColor;
@@ -179,6 +184,7 @@
     font-size: 32px;
     font-weight: 700;
     color: $textWhite;
+    text-decoration: none;
 
     &--accent {
       color: $textBlack;
@@ -277,6 +283,11 @@
   cursor: auto;
   overflow: auto;
 
+  @include tablet {
+    width: 568px;
+    height: 644px;
+  }
+
   &__close-button {
     border: none;
     width: 30px;
@@ -296,6 +307,12 @@
     font-weight: 400;
     margin-top: 28px;
     margin-bottom: 83px;
+
+    @include tablet {
+      font-size: 20px;
+      margin-top: 32px;
+      margin-bottom: 103px;
+    }
   }
 
   &__form {
@@ -304,12 +321,16 @@
     justify-content: center;
   }
 
-  &__radios {
+  &__checkboxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 85px;
     border: none;
+
+    @include tablet {
+      gap: 32px;
+    }
   }
 
   &__ice-cream,
@@ -322,16 +343,32 @@
     border: 2px solid #96af8c;
     box-shadow: 0px 5.2602739334106445px 19.72602653503418px 0px rgba(212, 20, 67, 0.1);
 
+    @include tablet {
+      width: 132px;
+      height: 135px;
+      margin-bottom: 40px;
+    }
+
     &:last-of-type {
       margin-bottom: 30px;
     }
   }
 
-  &__radio {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    display: none;
+  &__icon--ice-cream {
+    position: absolute;
+    width: 132px;
+    height: 132px;
+    top: calc(7px - 50%);
+  }
+
+  &__ice-coffe {
+    border: 2px solid #efd478;
+    box-shadow: 0px 5.2602739334106445px 19.72602653503418px 0px rgba(212, 20, 67, 0.1);
+  }
+
+  &__milkshake {
+    border: 2px solid #d6936d;
+    box-shadow: 0px 5.2602739334106445px 19.72602653503418px 0px rgba(212, 20, 67, 0.1);
   }
 
   &__picture {
@@ -339,9 +376,46 @@
     height: 132px;
     position: absolute;
     border-radius: 50%;
-
-    background-image: url('../images/header/ice-cream-132.jpg');
     top: -50%;
+  }
+
+  &__ice-cream-img {
+    background-image: url('../images/header/ice-cream-132.jpg');
+    background-size: 132px 132px;
+    box-shadow: 0 7px #9cbe8fb2,
+      0px 12.2602739334106445px 19.72602653503418px rgba(10, 136, 23, 0.25);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/header/ice-cream-264.jpg');
+    }
+  }
+
+  &__ice-coffe-img {
+    background-image: url('../images/header/ice-coffe-132.jpg');
+    background-size: 132px 132px;
+    box-shadow: 0 7px #f8d24eb2,
+      0px 12.2602739334106445px 19.72602653503418px rgba(153, 114, 23, 0.25);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/header/ice-coffe-264.jpg');
+    }
+  }
+
+  &__milkshake-img {
+    background-image: url('../images/header/milkshake-132.jpg');
+    background-size: 132px 132px;
+    box-shadow: 0 7px #d5753fb2, 0px 12.2602739334106445px 19.72602653503418px rgba(0, 0, 0, 0.25);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/header/milkshake-264.jpg');
+    }
   }
 
   &__paragraph {
@@ -354,4 +428,68 @@
     padding-top: 96px;
     margin: 0px;
   }
+
+  &__input {
+    width: 224px;
+    height: 32px;
+    border-radius: 10px;
+    border: 1px solid #84a178;
+    background: rgba(248, 210, 78, 0.1);
+    margin-bottom: 12px;
+
+    @include tablet {
+      width: 368px;
+      height: 42px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__textarea {
+    border: 1px solid #84a178;
+    background: rgba(248, 210, 78, 0.1);
+    width: 224px;
+    height: 65px;
+    border-radius: 10px;
+    margin-bottom: 26px;
+
+    @include tablet {
+      width: 368px;
+      height: 84px;
+      margin-left: 90px;
+      margin-right: 90px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__submit {
+    min-width: 114px;
+    height: 42px;
+    background: #f8d24e;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+
+    @include tablet {
+      width: 121px;
+      font-size: 14px;
+    }
+  }
+}
+
+.buy__check {
+  display: none;
+  appearance: none;
+}
+
+.buy__check:checked ~ .buy__ice-cream {
+  background-color: #96af8c;
+}
+
+.buy__check:checked ~ .buy__ice-coffe {
+  background-color: #efd478;
+}
+
+.buy__check:checked ~ .buy__milkshake {
+  background-color: #d6936d;
 }
