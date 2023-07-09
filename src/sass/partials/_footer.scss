@@ -1,56 +1,40 @@
 .footer {
-  position: relative;
   background-color: #84a278;
   padding-bottom: 50px;
   font-size: 12px;
 
-  @mixin tablet {
-    @media screen and (min-width: 768px) {
-      padding-bottom: 12px;
-      font-size: 14px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      padding-bottom: 0;
-    }
-  }
-  .container {
-    background-color: #84a278;
-    padding: 0 33px;
-    margin: 0 auto;
-    max-width: 480px;
-    padding: 0 22px;
-    position: absolute;
-    top: 120px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    @media screen and (min-width: 768px) {
-      max-width: 768px;
-      padding: 0 33px;
-    }
-    @media screen and (min-width: 1200px) {
-      max-width: 1200px;
-      padding: 0 16px;
-    }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 12px;
+    font-size: 14px;
   }
 
-  .footer__container {
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
+
+  &__container {
     margin-bottom: 62px;
 
     @media screen and (min-width: 768px) {
       margin-bottom: 38px;
       justify-content: space-around;
-      display: flex;
     }
     @media screen and (min-width: 1200px) {
       margin-bottom: 44px;
+      display: flex;
     }
   }
-
+  &__social {
+    display: flex;
+    flex-direction: column;
+  }
   &__title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
     max-width: 232px;
-    letter-spacing: normal;
     text-transform: uppercase;
     color: #fcfcfc;
     font-size: 18px;
@@ -61,10 +45,8 @@
 
     @media screen and (min-width: 768px) {
       width: 352px;
-      flex-direction: column;
+      flex-direction: row;
       font-size: 26px;
-      font-style: normal;
-      line-height: normal;
       letter-spacing: 1.04px;
       margin-bottom: 8px;
     }
@@ -72,7 +54,6 @@
       display: flex;
       font-weight: 400;
       font-size: 30px;
-      line-height: normal;
       letter-spacing: 1.2px;
       text-transform: uppercase;
       margin-bottom: 14px;
@@ -80,42 +61,33 @@
     }
   }
 
-  &__title > span {
-    display: block;
+  &__heading {
     font-size: 34px;
-    font-style: normal;
+    color: #fcfcfc;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 1.36px;
     text-transform: uppercase;
-    width: 234px;
-    height: 134px;
     text-align: left;
 
     @media screen and (min-width: 768px) {
       display: flex;
       font-size: 48px;
-      font-style: normal;
       font-weight: 700;
-      line-height: normal;
       letter-spacing: 2.88px;
       width: 352px;
       height: 183px;
       text-align: left;
     }
     @media screen and (min-width: 1200px) {
-      font-style: normal;
       font-weight: 700;
-      line-height: normal;
       letter-spacing: 3.48px;
-      flex-direction: column;
+      flex-direction: row;
       font-size: 58px;
       width: 504px;
       height: 122px;
       text-align: left;
     }
   }
-
   &__social-list {
     display: flex;
     justify-content: flex-end;
@@ -157,7 +129,6 @@
 
   &__social-icon {
     display: block;
-
     flex-shrink: 0;
     background-color: #f8d24e;
     fill: #84a278;
@@ -172,8 +143,6 @@
     &:hover,
     &:focus {
       fill: #e1e1e1;
-      background-color: #f8d24e;
-      border-radius: 50%;
     }
   }
 
@@ -184,7 +153,6 @@
     line-height: 1.86;
     text-decoration: none;
     text-align: right;
-    letter-spacing: normal;
     font-size: 12px;
   }
 
@@ -197,30 +165,45 @@
     color: #7a7a7a;
     font-family: Montserrat;
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
     letter-spacing: 0.28px;
     text-align: center;
     margin: 0 auto;
+
     @media screen and (min-width: 768px) {
       margin-top: 12px;
       margin-bottom: 12px;
       text-align: center;
     }
-    @media screen and (min-width: 480px) {
-      margin-top: 20px;
-      margin-bottom: 24px;
+    @media screen and (min-width: 1200px) {
+      margin-top: 12px;
+      margin-bottom: 12px;
       flex-wrap: wrap;
     }
+    &::after {
+      content: '';
+      display: block;
+      background-color: #e1e1e1;
+      stroke-width: 1px;
+      transform: translate(-50%);
+      height: 1px;
+      width: 480x;
+    }
   }
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    background-color: #e1e1e1;
-    stroke-width: 1px;
-    transform: translate(-50%);
-    height: 1px;
-    width: 1167px;
+}
+
+.container {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  @include mobile {
+    max-width: 480px;
+    @include tablet {
+      max-width: 768px;
+    }
+    @include desktop {
+      max-width: 1200px;
+    }
   }
 }
