@@ -18,12 +18,12 @@
   background-color: #84a178;
   position: relative;
   list-style: none;
-  height: 1499px;
+  height: 1100px;
   @include tablet {
-    height: 768px;
+    height: 420px;
   }
   @include desktop {
-    height: 1200px;
+    height: 620px;
   }
   &__wrapper {
     display: flex;
@@ -62,6 +62,7 @@
     background-color: #f8d24e;
     border-radius: 6px;
     border: none;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
@@ -72,7 +73,7 @@
 
     @include tablet {
       padding: 4px 13px;
-      font-size: 16px;
+      font-size: 14px;
       margin-bottom: 32px;
     }
     @include desktop {
@@ -102,7 +103,7 @@
   &__item {
     width: 280px;
     height: 412px;
-    border-radius: 10px;
+    border-radius: 24px;
     background-color: #fcfcfc;
     padding: 40px 32px;
 
@@ -159,6 +160,15 @@
     font-size: 12px;
     line-height: 1.6;
     font-weight: 600;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.5;
+    }
   }
   &__buttons {
     display: flex;
@@ -190,14 +200,14 @@
     height: 50px;
   }
   &__header {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     line-height: 1.86;
     letter-spacing: 0.04em;
     font-weight: 700;
   }
   &__link {
-    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
     color: #d6936d;
     text-decoration: none;
     @include tablet {
@@ -235,8 +245,55 @@
   z-index: 100;
   visibility: visible;
 }
-.is-hidden {
+.backdrop .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+.modal-location {
+  visibility: hidden;
+  display: block;
+  background-color: #fcfcfc;
+  width: 280px;
+  height: 365px;
+  padding: 28px;
+  border: 2px solid #f8d24e;
+  border-radius: 7px;
+  position: relative;
+
+  &__header {
+    text-align: center;
+    margin: 0 auto 24px;
+  }
+  &__button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    width: 134px;
+    height: 42px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #f8d24e;
+    margin: 0 auto;
+    &:hover {
+      background-color: #0a8817;
+    }
+    &:focus {
+      background-color: #0a8817;
+      color: #fcfcfc;
+      fill: #fcfcfc;
+    }
+  }
+  &__map {
+    margin-bottom: 24px;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background-color: transparent;
+  color: $textBlack;
+  border: none;
 }
