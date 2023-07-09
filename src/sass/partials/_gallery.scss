@@ -1,13 +1,18 @@
+@import '../mixins';
+
 .container {
   max-width: 380px;
   width: 100%;
+  height: auto;
   margin: 0 auto;
   padding: 0 15px;
   @include tablet {
     max-width: 768px;
+    height: auto;
   }
   @include desktop {
     max-width: 1200px;
+    height: auto;
   }}
 
 
@@ -17,8 +22,10 @@
   background-position: center;
   background-size: cover;
   background-repeat: repeat-y;  
-  padding-bottom: 200px;
+  padding-bottom: 300px;
   max-width: 767px;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   
@@ -52,6 +59,8 @@
 --time: 8s;
 display: grid;
 margin: 0 auto;
+margin-bottom: 80px;
+padding-bottom: 140px;
 place-items: center;
 place-content: center;
       
@@ -59,27 +68,30 @@ place-content: center;
       padding-left: 20px;
       padding-right: 20px;      
       border-radius: 8px;
-      border:hidden;
+      border: hidden;
       margin: 0 auto;
-      margin-top:-36px;      
+      margin-top:-26px;   
       position:absolute;
       display: block;
-  width: 100%;
-  height: auto;
+      width: 100%;
+      height: auto;
+  
       
     @include tablet {
     min-width: 768px;
     max-width: 1199px;       
-    margin-top:-49px;      
+    margin-top:-16px;    
+    margin-bottom: 80px;      
     position:absolute;
     }
 
     @include desktop {
     min-width: 1200px;
     max-width: 1600px;
-    margin-top:-98px;
+    margin-top:-16px;    
+    margin-bottom: 240px;    
     position:absolute;      
-    padding-bottom: 200px;
+    
     }
   }
 }
@@ -109,4 +121,152 @@ place-content: center;
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.swiper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+height: 100%;
+  margin: 0 auto;
+  max-width: 600px;
+  max-height: 300px;
+
+    @include tablet 
+    { max-width: 705px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 80px;}
+
+    @include desktop 
+    {max-width: 968px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 140px;}
+
+  &-pagination {
+    width: 72px;
+    padding-top: 532px;
+    padding-bottom: 112px;
+    height: 100%;
+
+    &-bullet {
+      width: 12px;
+      height: 12px;
+      padding-top: 12px;
+      height: 100%;
+    }
+
+    &-bullet-active {
+      background-color: #84a178;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      height: 100%;
+    }
+  }
+  &__slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding-bottom: 12px;
+  height: 100%;
+  }
+   
+}
+
+.review {
+  display: flex;
+  justify-content: center;  
+  padding-top: 32px;
+  padding-bottom: 12px;
+  height: 100%;
+
+   &__list {
+   list-style: none;
+  padding: 0;
+  justify-content: center;
+  width: 280px;
+  padding-bottom: 12px;
+  height: 100%;
+  }
+
+  &__pic {
+    display: flex;
+    justify-content: center;
+    margin: auto; 
+    border-radius: 50%;
+    margin-bottom: 32px;
+    width: 84px;
+    
+  }
+
+  &__opinion {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 32px;
+    background: #84a178;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    padding-right: 39px;
+    padding-left: 39px;
+    color: #fcfcfc;
+    
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 2.25em;
+    margin-right: 15px;
+    margin-left: 15px;
+    
+
+    @include tablet {
+      font-size: 14px;
+      letter-spacing: 0.56px;
+      border-radius: 24x;
+      padding-bottom: 29px;
+      padding-top: 28px;
+      padding-right: 80px;
+      padding-left: 80px;
+      width: 705px;
+      margin: auto;
+    }
+
+    @include desktop {
+      font-size: 16px;
+      letter-spacing: 0.64px;
+      padding-bottom: 43px;
+      padding-top: 43px;
+      padding-right: 109px;
+      padding-left: 109px;
+      border-radius: 24px;
+      width: 968px;
+      margin: auto;
+    }
+  }
+
+  &__name {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Monsterrat', sans-serif;
+    font-weight: 500;
+    padding-top: 32px;
+    padding-bottom:12px;
+    margin-bottom: 50px;
+    margin-bottom: 20px;
+    
+
+    @include tablet {
+      font-size: 16px;
+    }
+
+    @include desktop {
+      font-size: 16px;
+    }
+  }
 }
