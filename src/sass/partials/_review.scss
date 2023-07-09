@@ -14,7 +14,7 @@
 
 .swiper {
   justify-content: center;
-
+  margin-bottom: 228px;
   padding: 0;
 
   padding-top: 80px;
@@ -40,6 +40,13 @@
   //justify-content: center;
   //margin: 0;
   //}
+
+  @include tablet {
+    margin-bottom: 379px;
+  }
+  @include desktop {
+    margin-bottom: 409px;
+  }
 }
 
 .review {
