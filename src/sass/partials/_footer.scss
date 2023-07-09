@@ -31,6 +31,10 @@
     flex-direction: column;
   }
   &__title {
+    display: flex;
+  }
+
+  &__label {
     max-width: 232px;
     text-transform: uppercase;
     color: #fcfcfc;
@@ -44,7 +48,6 @@
       width: 352px;
       flex-direction: row;
       font-size: 26px;
-
       letter-spacing: 1.04px;
       margin-bottom: 8px;
     }
@@ -59,7 +62,7 @@
     }
   }
 
-  &__title > p {
+  &__heading {
     display: block;
     font-size: 34px;
     font-weight: 700;
@@ -88,7 +91,6 @@
       text-align: left;
     }
   }
-
   &__social-list {
     display: flex;
     justify-content: flex-end;
@@ -184,7 +186,6 @@
   &::after {
     content: '';
     display: block;
-
     background-color: #e1e1e1;
     stroke-width: 1px;
     transform: translate(-50%);
