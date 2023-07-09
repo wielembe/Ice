@@ -34,30 +34,23 @@
   }
 
   &__label {
-    max-width: 232px;
-    text-transform: uppercase;
     color: #fcfcfc;
     font-size: 18px;
+    text-transform: uppercase;
     font-weight: 700;
-    line-height: 1.22;
-    margin-bottom: 16px;
-    text-align: left;
+    letter-spacing: 0.4;
+    width: 232px;
 
     @media screen and (min-width: 768px) {
       width: 352px;
       flex-direction: row;
       font-size: 26px;
-      letter-spacing: 1.04px;
-      margin-bottom: 8px;
     }
     @media screen and (min-width: 1200px) {
       display: flex;
       font-weight: 400;
       font-size: 30px;
-      letter-spacing: 1.2px;
-      text-transform: uppercase;
-      margin-bottom: 14px;
-      text-align: left;
+      width: 100%;
     }
   }
 
