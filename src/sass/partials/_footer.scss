@@ -168,9 +168,14 @@
 
   &__social-icon {
     display: block;
+
     flex-shrink: 0;
     background-color: #f8d24e;
     fill: #84a278;
+    width: 28px;
+    height: 28px;
+    padding-left: 6px;
+    padding-top: 6px;
 
     &:hover,
     &:focus {
