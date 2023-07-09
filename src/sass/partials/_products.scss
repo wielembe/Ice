@@ -4,7 +4,7 @@ ul {
   list-style: none;
 }
 .container {
-  max-width: 380px;
+  max-width: 480px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
@@ -115,12 +115,12 @@ ul {
     width: 200px;
     text-align: center;
     margin: 0 auto;
+    @include tablet {
+      width: 172px;
+    }
     @include desktop {
       width: 246px;
       font-size: 16px;
-    }
-    @include tablet {
-      width: 172px;
     }
   }
   &__flex-container {
@@ -254,14 +254,13 @@ ul {
 .backdrop {
   position: fixed;
   inset: 0;
-  z-index: 9;
+  z-index: 9999;
   cursor: not-allowed;
   transform: scale(1);
   background-color: #00000033;
 }
 .products-modal {
   position: relative;
-  z-index: 9999;
   margin: auto;
   background-color: $textWhite;
   border: 2px solid $secondaryBrandColor;
