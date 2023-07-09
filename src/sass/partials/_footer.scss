@@ -47,8 +47,11 @@
       margin-bottom: 44px;
     }
   }
-
+  &__social {
+    display: flex;
+  }
   &__title {
+    display: flex;
     max-width: 232px;
     letter-spacing: normal;
     text-transform: uppercase;
@@ -61,7 +64,7 @@
 
     @media screen and (min-width: 768px) {
       width: 352px;
-      flex-direction: column;
+      flex-direction: row;
       font-size: 26px;
       font-style: normal;
       line-height: normal;
@@ -80,7 +83,7 @@
     }
   }
 
-  &__title > span {
+  &__title > p {
     display: block;
     font-size: 34px;
     font-style: normal;
@@ -108,7 +111,7 @@
       font-weight: 700;
       line-height: normal;
       letter-spacing: 3.48px;
-      flex-direction: column;
+      flex-direction: row;
       font-size: 58px;
       width: 504px;
       height: 122px;
