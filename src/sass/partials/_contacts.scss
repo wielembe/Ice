@@ -1,5 +1,6 @@
 @import '../mixins';
 @import './vars';
+
 .container {
   max-width: 480px;
   margin: 0 auto;
@@ -27,14 +28,35 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
+    gap: 24px;
 
     @include tablet {
-      flex-direction: row;
+      flex-direction: column;
+      gap: 40px;
     }
     @include desktop {
-      flex-direction: row;
+      flex-direction: column;
+      gap: 60px;
+    }
+    &--moved {
+      position: absolute;
+      top: 340px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @include tablet {
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      @include desktop {
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
   }
+
   &__header {
     display: block;
     background-color: #f8d24e;
@@ -60,8 +82,6 @@
     }
   }
   &__list {
-    position: absolute;
-    top: -353px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,12 +93,10 @@
       display: flex;
       flex-direction: row;
       gap: 16px;
-      top: -299px;
     }
     @include desktop {
       flex-direction: row;
       gap: 32px;
-      top: -128px;
     }
   }
   &__item {
@@ -142,6 +160,20 @@
     line-height: 1.6;
     font-weight: 600;
   }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    align-items: center;
+    @include tablet {
+      flex-direction: row;
+      margin: 0 auto;
+    }
+    @include desktop {
+      margin-top: 0 auto;
+    }
+  }
 }
 .address {
   width: auto;
@@ -181,7 +213,6 @@
     }
   }
 }
-
 .modalSignup__form {
   position: absolute;
   width: calc(100% - 30px);
