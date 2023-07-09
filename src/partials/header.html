@@ -4,7 +4,7 @@
   </svg>
 
   <div class="header__wrapper">
-    <button class="header__menu js-open-menu">
+    <button class="header__menu" data-modal-menu-open>
       <svg class="header__icon">
         <use
           href="./images/icons-ice_cream.svg#icon-eva_menu-fill"
@@ -19,7 +19,7 @@
       <li><a href="#products" class="header__nav-item">Products</a></li>
       <li><a class="header__nav-item">Contact</a></li>
     </nav>
-    <button class="buy-now" data-modal-contact-open type="button">
+    <button class="buy-now" data-modal-buy-open type="button">
       <span class="buy-now__text">Buy now</span>
       <svg class="buy-now__svg">
         <use href="./images/icons-ice_cream.svg#icon-arrow-right-bold"></use>
@@ -28,13 +28,13 @@
   </div>
 </header>
 
-<div class="menu-container js-menu-container" id="mobile-menu">
+<div class="menu-container is-hidden" data-menu-buy>
   <div class="menu-container__header">
     <svg class="header__logo">
       <use href="./images/icons-ice_cream.svg#icon-Logo"></use>
     </svg>
 
-    <button class="menu-toggle js-close-menu">
+    <button class="menu-toggle" data-modal-menu-close>
       <svg
         fill="currentColor"
         viewBox="0 0 20 20"
@@ -61,7 +61,7 @@
     <li><a class="menu-container__link">Contact</a></li>
   </ul>
 
-  <button type="button" data-modal-contact-open class="menu-container__button">
+  <button type="button" data-modal-buy-open class="menu-container__button">
     <span class="menu-container__text">Buy now</span>
     <svg class="menu-container__svg">
       <use href="./images/icons-ice_cream.svg#icon-arrow-right-bold"></use>
@@ -69,9 +69,9 @@
   </button>
 </div>
 
-<div class="modal-backdrop is-hidden" data-modal-contact>
+<div class="modal-backdrop is-hidden" data-modal-buy>
   <div class="buy">
-    <button class="buy__close-button" data-modal-contact-close>
+    <button class="buy__close-button" data-modal-buy-close>
       <svg width="30" height="30">
         <line x1="9.5" y1="9.5" x2="20.5" y2="20.5" stroke="#131313" stroke-width="1" />
         <line x1="9.5" y1="20.5" x2="20.5" y2="9.5" stroke="#131313" stroke-width="1" />
