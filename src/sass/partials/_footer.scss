@@ -187,7 +187,23 @@
       stroke-width: 1px;
       transform: translate(-50%);
       height: 1px;
-      width: 1167px;
+      width: 480x;
+    }
+  }
+}
+
+.container {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  @include mobile {
+    max-width: 480px;
+    @include tablet {
+      max-width: 768px;
+    }
+    @include desktop {
+      max-width: 1200px;
     }
   }
 }
