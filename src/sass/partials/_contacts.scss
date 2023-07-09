@@ -106,6 +106,7 @@
     border-radius: 24px;
     background-color: #fcfcfc;
     padding: 40px 32px;
+    box-shadow: 0 8px 30px rgba(212, 20, 67, 0.1);
 
     @include tablet {
       width: 224px;
