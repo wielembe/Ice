@@ -18,7 +18,6 @@
       content: '';
       display: block;
       position: absolute;
-      width: 768px;
       background-color: #e1e1e1;
       stroke-width: 1px;
       transform: translate(-50%);
@@ -150,8 +149,6 @@
     transform: scale(1);
     border-radius: 50%;
     overflow: hidden;
-    background-color: #f8d24e;
-    fill: #84a278;
     width: 34px;
     height: 34px;
   }
@@ -162,8 +159,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 50%;
     cursor: pointer;
-    background-color: #f8d24e;
-    fill: #84a278;
   }
 
   &__social-icon {
