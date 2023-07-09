@@ -61,6 +61,7 @@
     letter-spacing: 1.36px;
     text-transform: uppercase;
     text-align: left;
+    flex-direction: column;
 
     @media screen and (min-width: 768px) {
       display: flex;
@@ -147,8 +148,17 @@
     text-decoration: none;
     text-align: right;
     font-size: 12px;
-  }
 
+    ::after {
+      content: '';
+      display: block;
+      background-color: #e1e1e1;
+      stroke-width: 1px;
+      transform: translate(-50%);
+      height: 1px;
+      width: 480x;
+    }
+  }
   &__contact-link {
     color: #fcfcfc;
     text-decoration: none;
@@ -172,15 +182,6 @@
       margin-top: 12px;
       margin-bottom: 12px;
       flex-wrap: wrap;
-    }
-    &__line {
-      content: '';
-      display: block;
-      background-color: #e1e1e1;
-      stroke-width: 1px;
-      transform: translate(-50%);
-      height: 1px;
-      width: 320x;
     }
   }
 }
