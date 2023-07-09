@@ -18,10 +18,10 @@
     @media screen and (min-width: 768px) {
       margin-bottom: 38px;
       justify-content: space-around;
-      display: flex;
     }
     @media screen and (min-width: 1200px) {
       margin-bottom: 44px;
+      display: flex;
     }
   }
   &__social {
@@ -30,6 +30,7 @@
   }
   &__title {
     display: flex;
+    flex-direction: column;
   }
 
   &__label {
@@ -62,10 +63,10 @@
 
   &__heading {
     font-size: 34px;
+    color: #fcfcfc;
     font-weight: 700;
     letter-spacing: 1.36px;
     text-transform: uppercase;
-    width: 234px;
     text-align: left;
 
     @media screen and (min-width: 768px) {
