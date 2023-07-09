@@ -3,18 +3,16 @@
   padding-bottom: 50px;
   font-size: 12px;
 
-  @mixin tablet {
-    @media screen and (min-width: 768px) {
-      padding-bottom: 12px;
-      font-size: 14px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      padding-bottom: 0;
-    }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 12px;
+    font-size: 14px;
   }
 
-  .footer__container {
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
+
+  &__container {
     margin-bottom: 62px;
 
     @media screen and (min-width: 768px) {
@@ -63,13 +61,11 @@
   }
 
   &__heading {
-    display: block;
     font-size: 34px;
     font-weight: 700;
     letter-spacing: 1.36px;
     text-transform: uppercase;
     width: 234px;
-    height: 134px;
     text-align: left;
 
     @media screen and (min-width: 768px) {
