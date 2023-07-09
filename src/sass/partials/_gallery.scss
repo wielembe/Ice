@@ -1,7 +1,6 @@
 @import '../mixins';
 
 .container {
-  
   max-width: 380px;
   width: 100%;
   height: auto;
@@ -12,9 +11,8 @@
   }
   @include desktop {
     max-width: 1200px;
-  }  
- }
-
+  }
+}
 
 .gallery {
   background-image: url(../images/Backgroud_mobile@1x.jpg);
@@ -49,60 +47,66 @@
   }
 }
 
-  .loop {
---time: 8s;
-display: grid;
-margin: 0 auto;
-padding-bottom: 80px;
-justify-items: center;
-place-content: center;
+.loop {
+  --time: 8s;
+  display: grid;
+  margin: 0 auto;
+  //padding-bottom: 80px;
+  justify-items: center;
+  place-content: center;
 
-      
-      &__image {        
-      padding-left: 20px;
-      padding-right: 20px;      
-      border-radius: 8px;
-      border: hidden;
-      margin: 0 auto;
-      margin-top:-39px;  
-      width: 100%;
-      height: auto;
-      min-width: 380px;
-      max-width: 767px;
-      padding-bottom: 119px;
-  
-      
+  &__image {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    border: hidden;
+    margin: 0 auto;
+    margin-top: -39px;
+    width: 100%;
+    height: auto;
+    min-width: 380px;
+    max-width: 767px;
+    padding-bottom: 119px;
+
     @include tablet {
-    min-width: 768px;
-    max-width: 1199px;       
-    margin-top:-80px;    
-    padding-bottom: 80px;    
+      min-width: 768px;
+      max-width: 1199px;
+      margin-top: -80px;
+      padding-bottom: 80px;
     }
 
     @include desktop {
-    min-width: 1200px;    
-    margin-top:-127px;
-        
-    
+      min-width: 1200px;
+      margin-top: -127px;
     }
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .loop img {   
+  .loop img {
     grid-area: 1/1;
     animation: rotate calc(var(--time) * 3) linear 0s infinite;
   }
-   
-  .loop img:nth-child(2) { animation-delay: calc(var(--time) * -2); }
-  .loop img:nth-child(3) { animation-delay: calc(var(--time) * -1); }
+
+  .loop img:nth-child(2) {
+    animation-delay: calc(var(--time) * -2);
+  }
+  .loop img:nth-child(3) {
+    animation-delay: calc(var(--time) * -1);
+  }
 }
 
 @keyframes rotate {
-   /* 33.33%  (100% / number of images) */
-   0%, 33.33% { opacity: 1; }
-   /* 33.34%  (100% / number of images) + 0.01 */
-   33.34%, 100% { opacity: 0; }  
+  /* 33.33%  (100% / number of images) */
+  0%,
+  33.33% {
+    opacity: 1;
+  }
+  /* 33.34%  (100% / number of images) + 0.01 */
+  33.34%,
+  100% {
+    opacity: 0;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -121,24 +125,23 @@ place-content: center;
   justify-content: center;
   margin: 0 auto;
   max-width: 600px;
-  max-height: 300px;
-  
+  //max-height: 300px;
 
-    @include tablet 
-    { max-width: 705px;
+  @include tablet {
+    max-width: 705px;
     height: auto;
     margin: 0 auto;
-    }
+  }
 
-    @include desktop 
-    {max-width: 968px;
+  @include desktop {
+    max-width: 968px;
     height: auto;
     margin: 0 auto;
-    }
+  }
 
   &-pagination {
     width: 72px;
-    
+
     &-bullet {
       width: 12px;
       height: 12px;
@@ -160,11 +163,9 @@ place-content: center;
 
 .review {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   padding-top: 32px;
   padding-bottom: 12px;
-  
-  
 
   // &__list {
   // list-style: none;
@@ -172,16 +173,15 @@ place-content: center;
   //justify-content: center;
   //width: 280px;
   //padding-bottom: 12px;
-    //}
+  //}
 
   &__pic {
     display: flex;
     justify-content: center;
-    margin: auto; 
+    margin: auto;
     border-radius: 50%;
     margin-bottom: 32px;
     width: 84px;
-    
   }
 
   &__opinion {
@@ -196,7 +196,7 @@ place-content: center;
     padding-right: 39px;
     padding-left: 39px;
     color: #fcfcfc;
-    
+
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -205,7 +205,6 @@ place-content: center;
 
     //margin-right: 15px;
     //margin-left: 15px;
-    
 
     @include tablet {
       font-size: 14px;
@@ -240,10 +239,9 @@ place-content: center;
     font-family: 'Monsterrat', sans-serif;
     font-weight: 500;
     padding-top: 32px;
-    padding-bottom:12px;
+    padding-bottom: 12px;
     margin-bottom: 50px;
     margin-bottom: 20px;
-    
 
     @include tablet {
       font-size: 16px;
