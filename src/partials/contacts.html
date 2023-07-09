@@ -1,4 +1,4 @@
-<section class="contacts">
+<section class="contacts" id="contacts">
   <div class="container contacts__wrapper contacts__wrapper--moved">
     <ul class="contacts__list">
       <li class="contacts__item">
@@ -20,7 +20,7 @@
         </ul>
         <div class="contacts__line"></div>
         <ul class="contacts__touch">
-          <li><a class="contacts__link" href="tel:+61(0)383766284">+61(0) 383 766 284</a></li>
+          <li><a class="contacts__link" href="tel:+610383766284">+61(0) 383 766 284</a></li>
           <li><a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a></li>
         </ul>
       </li>
@@ -43,7 +43,7 @@
         </ul>
         <div class="contacts__line"></div>
         <ul class="contacts__touch">
-          <li><a class="contacts__link" href="tel:+61(0)383766284">+61(0) 383 766 284</a></li>
+          <li><a class="contacts__link" href="tel:+610383766284">+61(0) 383 766 284</a></li>
           <li><a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a></li>
         </ul>
       </li>
@@ -66,19 +66,19 @@
         </ul>
         <div class="contacts__line"></div>
         <ul class="contacts__touch">
-          <li><a class="contacts__link" href="tel:+61(0)383766284">+61(0) 383 766 284</a></li>
+          <li><a class="contacts__link" href="tel:+610383766284">+61(0) 383 766 284</a></li>
           <li><a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a></li>
         </ul>
       </li>
     </ul>
-<div class="contacts__buttons">
+  <div class="contacts__buttons">
     <button data-modal-open class="button-our-location " type="button">
   Our location
   <svg height="10px" width="6px">
     <use href="./images/icons-ice_cream.svg#icon-arrow-right-bold"></use>
   </svg>
-</button>
-<!-- <button class="button-our-location--disabled" type="button" disabled>
+  </button>
+  <!-- <button class="button-our-location--disabled" type="button" disabled>
   Our location
   <svg height="10px" width="6px">
     <use href="./images/icons-ice_cream.svg#icon-arrow-right-bold"></use>
@@ -87,15 +87,27 @@
 
 
 
-<button data-modal-open class="button-franchise" type="button">Franchise</button>
-<!-- <button class="button-franchise--disabled" type="button" disabled>Franchise</button> -->
-</div>
 
-    
+  <button data-modal-open class="button-franchise" type="button">Franchise</button>
+  <!-- <button class="button-franchise--disabled" type="button" disabled>Franchise</button> -->
+   </div>
+
+   
   
 
 
-   <div class="backdrop is-hidden" data-modal>
+   <div class="backdrop is-hidden" data-modal="location">
+     <div class="modal-location"><button type="button" class="close-btn" data-modal-close>
+        <svg class="xclose" width="20px" height="20px">
+          <use href="./images/icons-ice_cream.svg#icon-icon-close"></use>
+        </svg>
+      </button>
+      <h3 class="modal-location__header">Our Location</h3>
+      <iframe width="224px" height="199px" class="modal-location__map" src="https://goo.gl/maps/STne4sjAjZ7zSHTR6"></iframe>
+
+      <button data-modal-open class="modal-location__button" type="button">
+  Open map</button></div>
+
     <div class="modalSignup">
       <button type="button" class="close-btn" data-modal-close>
         <svg class="xclose" width="20px" height="20px">
@@ -132,8 +144,6 @@
         ></textarea>
         </label>    
           <button type="button" class="modalSignup__button">Signup</button>
-          
-
-    </form>
+          </form>
    </div>
 </section>
