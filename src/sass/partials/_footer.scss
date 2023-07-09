@@ -168,24 +168,25 @@
     letter-spacing: 0.28px;
     text-align: center;
     margin: 0 auto;
+
     @media screen and (min-width: 768px) {
       margin-top: 12px;
       margin-bottom: 12px;
       text-align: center;
     }
-    @media screen and (min-width: 480px) {
-      margin-top: 20px;
-      margin-bottom: 24px;
+    @media screen and (min-width: 1200px) {
+      margin-top: 12px;
+      margin-bottom: 12px;
       flex-wrap: wrap;
     }
-  }
-  &::after {
-    content: '';
-    display: block;
-    background-color: #e1e1e1;
-    stroke-width: 1px;
-    transform: translate(-50%);
-    height: 1px;
-    width: 1167px;
+    &::after {
+      content: '';
+      display: block;
+      background-color: #e1e1e1;
+      stroke-width: 1px;
+      transform: translate(-50%);
+      height: 1px;
+      width: 1167px;
+    }
   }
 }
