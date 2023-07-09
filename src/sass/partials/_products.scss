@@ -116,8 +116,8 @@ ul {
     text-align: center;
     margin: 0 auto;
     @include desktop {
+      width: 246px;
       font-size: 16px;
-      width: 242px;
     }
     @include tablet {
       width: 172px;
@@ -142,6 +142,13 @@ ul {
     display: flex;
     align-items: flex-end;
     cursor: pointer;
+    padding-bottom: 16px;
+    @include tablet {
+      padding-bottom: 12px;
+    }
+    @include desktop {
+      padding-bottom: 60px;
+    }
   }
 }
 .products__item {
@@ -254,7 +261,7 @@ ul {
 }
 .products-modal {
   position: relative;
-  z-index: -9999;
+  z-index: 9999;
   margin: auto;
   background-color: $textWhite;
   border: 2px solid $secondaryBrandColor;
