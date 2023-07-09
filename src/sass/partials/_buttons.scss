@@ -1,0 +1,109 @@
+.button-products {
+  font-weight: 600;
+  min-width: 108px;
+  height: 38px;
+  font-size: 12px;
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+  background: none;
+  @media screen and (min-width: 1200px) {
+    height: 42px;
+    min-width: 134px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+  &:hover {
+    border-color: #0a8817;
+  }
+  &:focus {
+    border-color: #0a8817;
+    color: #fcfcfc;
+  }
+  &--disabled {
+    @extend .button-products;
+    border-color: #ababab;
+    pointer-events: none;
+    color: #000000;
+  }
+}
+
+.button-read-more {
+  font-weight: 600;
+  min-width: 164px;
+  height: 38px;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #f8d24e;
+  &:hover {
+    background-color: #0a8817;
+  }
+  &:focus {
+    background-color: #0a8817;
+    color: #fcfcfc;
+    fill: #fcfcfc;
+  }
+  &--disabled {
+    @extend .button-read-more;
+    background-color: #ababab;
+    color: #000000;
+    pointer-events: none;
+  }
+}
+
+.button-how-its-made {
+  font-weight: 600;
+  font-size: 12px;
+  border: none;
+  background: none;
+  text-decoration: underline;
+  color: #f8d24e;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+  &:hover {
+    color: #0a8817;
+  }
+  &:focus {
+    color: #fcfcfc;
+  }
+  &--disabled {
+    @extend .button-how-its-made;
+    color: #ababab;
+    pointer-events: none;
+  }
+}
+
+.button-our-location {
+  @extend .button-read-more;
+  width: 196px;
+  &--disabled {
+    @extend .button-our-location;
+    background-color: #ababab;
+    color: #000000;
+    pointer-events: none;
+  }
+}
+
+.button-franchise {
+  @extend .button-products;
+  width: 196px;
+  font-size: 14px;
+  &--disabled {
+    @extend .button-franchise;
+    border-color: #ababab;
+    pointer-events: none;
+    color: #000000;
+  }
+}
+
+.button-buy-now {
+  @extend .button-read-more;
+  width: 152px;
+  &--disabled {
+    @extend .button-buy-now;
+    background-color: #ababab;
+    color: #000000;
+    pointer-events: none;
+  }
+}
