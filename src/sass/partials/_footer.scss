@@ -1,5 +1,4 @@
 .footer {
-  position: relative;
   background-color: #84a278;
   padding-bottom: 50px;
   font-size: 12px;
@@ -12,26 +11,6 @@
 
     @media screen and (min-width: 1200px) {
       padding-bottom: 0;
-    }
-  }
-  .container {
-    background-color: #84a278;
-    padding: 0 33px;
-    margin: 0 auto;
-    max-width: 480px;
-    padding: 0 22px;
-    position: absolute;
-    top: 120px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    @media screen and (min-width: 768px) {
-      max-width: 768px;
-      padding: 0 33px;
-    }
-    @media screen and (min-width: 1200px) {
-      max-width: 1200px;
-      padding: 0 16px;
     }
   }
 
@@ -49,11 +28,10 @@
   }
   &__social {
     display: flex;
+    flex-direction: column;
   }
   &__title {
-    display: flex;
     max-width: 232px;
-    letter-spacing: normal;
     text-transform: uppercase;
     color: #fcfcfc;
     font-size: 18px;
@@ -66,8 +44,7 @@
       width: 352px;
       flex-direction: row;
       font-size: 26px;
-      font-style: normal;
-      line-height: normal;
+
       letter-spacing: 1.04px;
       margin-bottom: 8px;
     }
@@ -75,7 +52,6 @@
       display: flex;
       font-weight: 400;
       font-size: 30px;
-      line-height: normal;
       letter-spacing: 1.2px;
       text-transform: uppercase;
       margin-bottom: 14px;
@@ -86,9 +62,7 @@
   &__title > p {
     display: block;
     font-size: 34px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 1.36px;
     text-transform: uppercase;
     width: 234px;
@@ -98,18 +72,14 @@
     @media screen and (min-width: 768px) {
       display: flex;
       font-size: 48px;
-      font-style: normal;
       font-weight: 700;
-      line-height: normal;
       letter-spacing: 2.88px;
       width: 352px;
       height: 183px;
       text-align: left;
     }
     @media screen and (min-width: 1200px) {
-      font-style: normal;
       font-weight: 700;
-      line-height: normal;
       letter-spacing: 3.48px;
       flex-direction: row;
       font-size: 58px;
@@ -160,7 +130,6 @@
 
   &__social-icon {
     display: block;
-
     flex-shrink: 0;
     background-color: #f8d24e;
     fill: #84a278;
@@ -168,13 +137,13 @@
     height: 34px;
     padding-left: 6px;
     padding-top: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
     border-radius: 25%;
 
     &:hover,
     &:focus {
       fill: #e1e1e1;
-      background-color: #f8d24e;
-      border-radius: 50%;
     }
   }
 
@@ -185,7 +154,6 @@
     line-height: 1.86;
     text-decoration: none;
     text-align: right;
-    letter-spacing: normal;
     font-size: 12px;
   }
 
@@ -198,7 +166,6 @@
     color: #7a7a7a;
     font-family: Montserrat;
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
     letter-spacing: 0.28px;
     text-align: center;
@@ -217,7 +184,7 @@
   &::after {
     content: '';
     display: block;
-    position: absolute;
+
     background-color: #e1e1e1;
     stroke-width: 1px;
     transform: translate(-50%);
