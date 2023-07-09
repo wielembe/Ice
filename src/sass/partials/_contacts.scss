@@ -17,7 +17,13 @@
   background-color: #84a178;
   position: relative;
   list-style: none;
-
+  height: 1499px;
+  @include tablet {
+    height: 768px;
+  }
+  @include desktop {
+    height: 1200px;
+  }
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -127,6 +133,7 @@
   &__touch {
     list-style: none;
     padding-left: 0;
+    gap: 4px;
   }
   &__link {
     text-decoration: none;
