@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" id="header">
   <svg class="header__logo">
     <use href="./images/icons-ice_cream.svg#icon-Logo"></use>
   </svg>
@@ -14,12 +14,12 @@
       </svg>
     </button>
     <nav class="header__nav">
-      <li class="header__nav-item">Home</li>
-      <li class="header__nav-item">How it&apos;s made?</li>
-      <li class="header__nav-item">Our products</li>
-      <li class="header__nav-item">Contact</li>
+      <li><a href="#header" class="header__nav-item">Home</a></li>
+      <li><a href="#about" class="header__nav-item">How it&apos;s made?</a></li>
+      <li><a href="#products" class="header__nav-item">Products</a></li>
+      <li><a class="header__nav-item">Contact</a></li>
     </nav>
-    <button class="buy-now">
+    <button class="buy-now" data-modal-contact-open type="button">
       <span class="buy-now__text">Buy now</span>
       <svg class="buy-now__svg">
         <use href="./images/icons-ice_cream.svg#icon-arrow-right-bold"></use>
@@ -51,16 +51,61 @@
     </button>
   </div>
   <ul class="menu-container__list">
-    <li><a class="menu-container__link">Home</a></li>
-    <li><a class="menu-container__link menu-container__link--accent">How it&apos;s made?</a></li>
-    <li><a class="menu-container__link">Our products</a></li>
+    <li><a href="#header" class="menu-container__link">Home</a></li>
+    <li>
+      <a href="#about" class="menu-container__link menu-container__link--accent"
+        >How it&apos;s made?</a
+      >
+    </li>
+    <li><a href="#products" class="menu-container__link">Our products</a></li>
     <li><a class="menu-container__link">Contact</a></li>
   </ul>
 
-  <button type="button" class="menu-container__button">
+  <button type="button" data-modal-contact-open class="menu-container__button">
     <span class="menu-container__text">Buy now</span>
     <svg class="menu-container__svg">
       <use href="./images/icons-ice_cream.svg#icon-arrow-right-bold"></use>
     </svg>
   </button>
+</div>
+
+<div class="modal-backdrop is-hidden" data-modal-contact>
+  <div class="buy">
+    <button class="buy__close-button" data-modal-contact-close>
+      <svg width="30" height="30">
+        <line x1="9.5" y1="9.5" x2="20.5" y2="20.5" stroke="#131313" stroke-width="1" />
+        <line x1="9.5" y1="20.5" x2="20.5" y2="9.5" stroke="#131313" stroke-width="1" />
+      </svg>
+    </button>
+    <h2 class="buy__tittle">Buy now</h2>
+    <form class="buy__form">
+      <fieldset class="buy__checkboxes">
+        <label>
+          <input type="checkbox" name="product" value="ice-cream" class="buy__check" />
+          <div class="buy__ice-cream">
+            <div class="buy__picture buy__ice-cream-img"></div>
+            <p class="buy__paragraph">Ice cream</p>
+          </div>
+        </label>
+        <label>
+          <input type="checkbox" name="product" value="ice-coffe" class="buy__check" />
+          <div class="buy__ice-coffe">
+            <img href="./images/header/ice-cream-132.jpg" class="buy__picture buy__ice-coffe-img" />
+            <p class="buy__paragraph">Ice coffe</p>
+          </div>
+        </label>
+        <label>
+          <input type="checkbox" name="product" value="milkshake" class="buy__check" />
+          <div class="buy__milkshake">
+            <img href="./images/header/ice-cream.jpg" class="buy__picture buy__milkshake-img" />
+            <p class="buy__paragraph">Milkshake</p>
+          </div>
+        </label>
+      </fieldset>
+      <label><input type="text" name="name" placeholder="Name" class="buy__input" /></label>
+      <label><input type="text" name="phone" placeholder="Phone" class="buy__input" /></label>
+      <label><textarea placeholder="Comment" class="buy__textarea"></textarea></label>
+      <button type="submit" class="buy__submit">Submit</button>
+    </form>
+  </div>
 </div>

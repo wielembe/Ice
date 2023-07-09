@@ -1,6 +1,23 @@
-/*.swiper {
-  justify-content: center;
 
+/*.swiper {
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
+}
+
+.swiper {
+
+  justify-content: center;
+  margin-bottom: 379px;
   padding: 0;
 
   padding-top: 80px;
@@ -26,6 +43,13 @@
   //justify-content: center;
   //margin: 0;
   //}
+
+  @include tablet {
+    margin-bottom: 379px;
+  }
+  @include desktop {
+    margin-bottom: 409px;
+  }
 }
 
 .review {
@@ -75,8 +99,8 @@
     letter-spacing: 0.04em;
     line-height: 2.25em;
 
-    margin-right: 15px;
-    margin-left: 15px;
+    //margin-right: 15px;
+    //margin-left: 15px;
 
     @include tablet {
       font-size: 14px;
@@ -88,16 +112,16 @@
       padding-left: 80px;
 
       width: 705px;
-      margin: auto;
+      margin: 0 auto;
     }
 
     @include desktop {
       font-size: 16px;
       letter-spacing: 0.64px;
-      padding-bottom: 43px;
-      padding-top: 43px;
-      padding-right: 109px;
-      padding-left: 109px;
+      //padding-bottom: 43px;
+      //padding-top: 43px;
+      //padding-right: 109px;
+      //padding-left: 109px;
 
       border-radius: 24px;
       width: 968px;
