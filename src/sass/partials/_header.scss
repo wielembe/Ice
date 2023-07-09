@@ -14,6 +14,12 @@
     padding-left: 32px;
   }
 
+  @include desktop {
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 8px;
+  }
+
   &__logo {
     fill: $secondaryBrandColor;
     width: 40px;
@@ -24,12 +30,21 @@
       width: 48px;
       height: 44px;
     }
+
+    @include desktop {
+      width: 60px;
+      height: 65px;
+    }
   }
 
   &__menu {
     background-color: transparent;
     border: none;
     padding: 0px;
+
+    @include desktop {
+      display: none;
+    }
   }
 
   &__icon {
@@ -41,6 +56,36 @@
   &__wrapper {
     display: flex;
     gap: 32px;
+    align-items: end;
+
+    @include desktop {
+      gap: 205px;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @include desktop {
+      display: flex;
+      list-style: none;
+      gap: 28px;
+      padding: 13px;
+      align-items: center;
+      color: $textWhite;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  &__nav-item {
+    color: $textWhite;
+    text-decoration: none;
+  }
+
+  &__nav-item:hover,
+  &__nav-item:focus {
+    color: $secondaryBrandColor;
   }
 }
 
@@ -51,6 +96,20 @@
   border-style: none;
   border-radius: 10px;
   display: none;
+
+  &:hover {
+    background-color: #0a8817;
+  }
+  &:focus {
+    background-color: #0a8817;
+    color: #fcfcfc;
+    fill: #fcfcfc;
+  }
+  &--disabled {
+    background-color: #ababab;
+    color: #000000;
+    pointer-events: none;
+  }
 
   @include tablet {
     display: flex;
@@ -69,4 +128,368 @@
     width: 12px;
     height: 12px;
   }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 998;
+  background-color: $firstBrandColor;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+  &__header {
+    padding: 12px 20px 51px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    @include mobile {
+      padding-bottom: 40px;
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+    @include tablet {
+      padding-bottom: 72px;
+      padding-left: 32px;
+      padding-right: 32px;
+      padding-top: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    list-style: none;
+    align-items: center;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 110px;
+
+    @include mobile {
+      margin-bottom: 114px;
+    }
+
+    @include tablet {
+      gap: 40px;
+    }
+  }
+
+  &__link {
+    font-size: 32px;
+    font-weight: 700;
+    color: $textWhite;
+    text-decoration: none;
+
+    &--accent {
+      color: $textBlack;
+    }
+
+    @include tablet {
+      font-size: 48px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $secondaryBrandColor;
+    }
+  }
+
+  &__button {
+    background-color: $secondaryBrandColor;
+    width: 152px;
+    height: 42px;
+    border-style: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin: 0 auto;
+
+    &:hover {
+      background-color: #0a8817;
+    }
+    &:focus {
+      background-color: #0a8817;
+      color: #fcfcfc;
+      fill: #fcfcfc;
+    }
+    &--disabled {
+      background-color: #ababab;
+      color: #000000;
+      pointer-events: none;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__text {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &__svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-toggle {
+  color: $textWhite;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.is-hidden {
+  pointer-events: none;
+  visibility: none;
+  opacity: 0;
+  transform: scale(0);
+}
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  cursor: not-allowed;
+  transform: scale(1);
+  background-color: #0a0a0a6a;
+}
+
+.buy {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  background: $textWhite;
+  border: 2px solid $secondaryBrandColor;
+  border-radius: 10px;
+  width: 280px;
+
+  cursor: auto;
+  overflow: auto;
+
+  @include tablet {
+    width: 568px;
+    height: 644px;
+  }
+
+  &__close-button {
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    position: absolute;
+    top: 2%;
+    left: 84%;
+    cursor: pointer;
+  }
+
+  &__tittle {
+    color: $textBlack;
+    text-align: center;
+    font-size: 16px;
+    font-family: Seymour One;
+    font-weight: 400;
+    margin-top: 28px;
+    margin-bottom: 83px;
+
+    @include tablet {
+      font-size: 20px;
+      margin-top: 32px;
+      margin-bottom: 103px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 85px;
+    border: none;
+
+    @include tablet {
+      gap: 32px;
+    }
+  }
+
+  &__ice-cream,
+  &__ice-coffe,
+  &__milkshake {
+    width: 132px;
+    height: 136px;
+    border-radius: 15px;
+    position: relative;
+    border: 2px solid #96af8c;
+    box-shadow: 0px 5.2602739334106445px 19.72602653503418px 0px rgba(212, 20, 67, 0.1);
+
+    @include tablet {
+      width: 132px;
+      height: 135px;
+      margin-bottom: 40px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__icon--ice-cream {
+    position: absolute;
+    width: 132px;
+    height: 132px;
+    top: calc(7px - 50%);
+  }
+
+  &__ice-coffe {
+    border: 2px solid #efd478;
+    box-shadow: 0px 5.2602739334106445px 19.72602653503418px 0px rgba(212, 20, 67, 0.1);
+  }
+
+  &__milkshake {
+    border: 2px solid #d6936d;
+    box-shadow: 0px 5.2602739334106445px 19.72602653503418px 0px rgba(212, 20, 67, 0.1);
+  }
+
+  &__picture {
+    width: 132px;
+    height: 132px;
+    position: absolute;
+    border-radius: 50%;
+    top: -50%;
+  }
+
+  &__ice-cream-img {
+    background-image: url('../images/header/ice-cream-132.jpg');
+    background-size: 132px 132px;
+    box-shadow: 0 7px #9cbe8fb2,
+      0px 12.2602739334106445px 19.72602653503418px rgba(10, 136, 23, 0.25);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/header/ice-cream-264.jpg');
+    }
+  }
+
+  &__ice-coffe-img {
+    background-image: url('../images/header/ice-coffe-132.jpg');
+    background-size: 132px 132px;
+    box-shadow: 0 7px #f8d24eb2,
+      0px 12.2602739334106445px 19.72602653503418px rgba(153, 114, 23, 0.25);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/header/ice-coffe-264.jpg');
+    }
+  }
+
+  &__milkshake-img {
+    background-image: url('../images/header/milkshake-132.jpg');
+    background-size: 132px 132px;
+    box-shadow: 0 7px #d5753fb2, 0px 12.2602739334106445px 19.72602653503418px rgba(0, 0, 0, 0.25);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/header/milkshake-264.jpg');
+    }
+  }
+
+  &__paragraph {
+    color: $textBlack;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+    padding-top: 96px;
+    margin: 0px;
+  }
+
+  &__input {
+    width: 224px;
+    height: 32px;
+    border-radius: 10px;
+    border: 1px solid #84a178;
+    background: rgba(248, 210, 78, 0.1);
+    margin-bottom: 12px;
+
+    @include tablet {
+      width: 368px;
+      height: 42px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__textarea {
+    border: 1px solid #84a178;
+    background: rgba(248, 210, 78, 0.1);
+    width: 224px;
+    height: 65px;
+    border-radius: 10px;
+    margin-bottom: 26px;
+
+    @include tablet {
+      width: 368px;
+      height: 84px;
+      margin-left: 90px;
+      margin-right: 90px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__submit {
+    min-width: 114px;
+    height: 42px;
+    background: #f8d24e;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+
+    @include tablet {
+      width: 121px;
+      font-size: 14px;
+    }
+  }
+}
+
+.buy__check {
+  display: none;
+  appearance: none;
+}
+
+.buy__check:checked ~ .buy__ice-cream {
+  background-color: #96af8c;
+}
+
+.buy__check:checked ~ .buy__ice-coffe {
+  background-color: #efd478;
+}
+
+.buy__check:checked ~ .buy__milkshake {
+  background-color: #d6936d;
 }

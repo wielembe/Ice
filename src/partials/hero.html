@@ -20,26 +20,36 @@
   <div class="hero__img-group">
     <img
       class="hero__plate-img"
-      src="./images/header/plate-tablet-1x.png"
-      srcset="./images/header/plate-tablet-1x.png 1x, ./images/header/plate-tablet-2x.png 2x"
-      sizes="(min-width: 1200px) 456px ,(min-width: 768px), 100vw"
+      src="./images/header/plate-tablet-152.png"
+      srcset="
+        ./images/header/plate-tablet-152.png  152w,
+        ./images/header/plate-tablet-304.png  304w,
+        ./images/header/plate-desktop-225.png 225w,
+        ./images/header/plate-desktop-450.png 450w
+      "
+      sizes="(min-width: 1200px) 225px ,(min-width: 768px) 152px, 100vw"
     />
 
     <p class="hero__text">
       Indulge in a scoop of ice cream made with passion and treat your taste buds to an
       unforgettable experience!
+      <svg class="hero__arrow">
+        <use href="./images/icons-ice_cream.svg#icon-Arrow"></use>
+      </svg>
     </p>
 
     <img
       class="hero__main-img"
-      src="./images/header/mobile-1x.png"
+      src="./images/header/mobile-177.png"
       srcset="
-        ./images/header/mobile-1x.png 1x,
-        ./images/header/mobile-2x.png 2x,
-        ./images/header/tablet-1x.png 1x,
-        ./images/header/tablet-2x.png 2x
+        ./images/header/mobile-177.png  177w,
+        ./images/header/mobile-354.png  354w,
+        ./images/header/tablet-268.png  268w,
+        ./images/header/tablet-536.png  536w,
+        ./images/header/desktop-456.png 456w,
+        ./images/header/desktop-912.png 912w
       "
-      sizes="(min-width: 1200px) 456px ,(min-width: 768px) 268px, (min-width:480px) 218px, 100vw"
+      sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, (min-width: 480px) 177px, 100vw"
     />
     <svg class="hero__dots-mobile">
       <use href="./images/icons-ice_cream.svg#icon-kropki-mobile"></use>
@@ -47,5 +57,7 @@
     <svg class="hero__dots-tablet">
       <use href="./images/icons-ice_cream.svg#icon-kropki-tablet"></use>
     </svg>
+
+    <img class="hero__dots-desktop" src="./images/header/kropki-desktop.png" />
   </div>
 </section>
