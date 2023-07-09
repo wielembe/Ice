@@ -16,7 +16,7 @@
 }
 .contacts {
   background-color: #84a178;
-
+  position: relative;
   list-style: none;
   height: 1499px;
   @include tablet {
@@ -39,13 +39,20 @@
       gap: 60px;
     }
     &--moved {
-      padding-top: -349px;
+      position: absolute;
+      top: 340px;
+      left: 50%;
+      transform: translate(-50%, -50%);
 
       @include tablet {
-        top: -299px;
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
       @include desktop {
-        top: -128px;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
     }
   }
