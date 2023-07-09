@@ -3,6 +3,13 @@
   padding-bottom: 50px;
   font-size: 12px;
 
+  &__line {
+    border: 0.4 solid #e1e1e1;
+    text-align: left;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
   @media screen and (min-width: 768px) {
     padding-bottom: 12px;
     font-size: 14px;
@@ -149,13 +156,6 @@
     text-decoration: none;
     text-align: right;
     font-size: 12px;
-
-    &__line {
-      border: 0.4 solid #e1e1e1;
-      text-align: left;
-      margin-bottom: 24px;
-      width: 100%;
-    }
   }
   &__contact-link {
     color: #fcfcfc;
