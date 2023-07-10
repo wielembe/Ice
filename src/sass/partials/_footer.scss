@@ -68,9 +68,8 @@
     font-weight: 700;
     letter-spacing: 1.36px;
     text-transform: uppercase;
-    margin-top: 0;
     text-align: left;
-    flex-direction: column;
+    flex-direction: row;
     max-width: 200px;
 
     @media screen and (min-width: 768px) {
@@ -87,10 +86,9 @@
       letter-spacing: 3.48px;
       flex-direction: row;
       font-size: 58px;
-
       height: 122px;
       text-align: left;
-      width: 497px;
+      width: 500px;
     }
   }
   &__social-list {
@@ -184,22 +182,6 @@
     @media screen and (min-width: 1200px) {
       margin-top: 12px;
       margin-bottom: 12px;
-    }
-  }
-}
-
-.container {
-  max-width: 320px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-  @include mobile {
-    max-width: 480px;
-    @include tablet {
-      max-width: 768px;
-    }
-    @include desktop {
-      max-width: 1200px;
     }
   }
 }
