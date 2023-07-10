@@ -66,21 +66,41 @@
       flex-direction: row;
     }
   }
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 5;
+  }
   &__img-container {
     border-radius: 50%;
-    box-shadow: 0 -22px 0 5px #f8d24eb3, 0 -22px 0 5px #d9d9d9;
-
     margin: 0 auto 40px;
-    & img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-    }
+    position: relative;
     @include tablet {
       max-width: 50%;
     }
     @include desktop {
       max-width: 40%;
+    }
+    &::before {
+      content: '';
+      width: 350px;
+      height: 350px;
+      background-color: #d9d9d9;
+      background-image: linear-gradient(#f8d24eb3, #f8d24eb3);
+      border-radius: 50%;
+      position: absolute;
+      bottom: 30px;
+      z-index: 1;
+      @include tablet {
+        width: 330px;
+        height: 330px;
+      }
+      @include desktop {
+        width: 468px;
+        height: 468px;
+      }
     }
   }
 
