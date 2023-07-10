@@ -175,7 +175,7 @@ ul {
   @include desktop {
     width: 370px;
     height: 536px;
-    margin-top: 230px;
+    margin-top: 270px;
   }
   &--ice-cream {
     background-color: #aec6a5;
@@ -195,13 +195,12 @@ ul {
   translate: 20% -50%;
   z-index: 20;
   @include tablet {
-    max-width: 50%;
     translate: 5% -70%;
   }
   @include desktop {
-    width: 40%;
-    height: auto;
-    translate: 11% -50%;
+    width: 302px;
+    height: 302px;
+    translate: 26% -50%;
   }
   &__img {
     width: 200px;
