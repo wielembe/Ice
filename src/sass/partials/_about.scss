@@ -72,6 +72,9 @@
     height: auto;
     position: relative;
     z-index: 5;
+    @include tablet {
+      width: 100%;
+    }
   }
   &__img-container {
     min-width: 279px;
@@ -98,10 +101,12 @@
       @include tablet {
         width: 330px;
         height: 330px;
+        bottom: -30px;
       }
       @include desktop {
         width: 468px;
         height: 468px;
+        bottom: -150px;
       }
     }
   }
