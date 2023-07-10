@@ -1,31 +1,32 @@
-<header class="header" id="header">
-  <svg class="header__logo">
-    <use href="./images/icons-ice_cream.svg#icon-Logo"></use>
-  </svg>
+<div class="conteiner">
+  <header class="header" id="header">
+    <svg class="header__logo">
+      <use href="./images/icons-ice_cream.svg#icon-Logo"></use>
+    </svg>
 
-  <div class="header__wrapper">
-    <button class="header__menu" data-modal-menu-open>
-      <svg class="header__icon">
-        <use href="./images/icons-ice_cream.svg#icon-eva_menu-fill"></use>
-      </svg>
-    </button>
-    <nav>
-      <ul class="header__nav">
-        <li><a href="#header" class="header__nav-item">Home</a></li>
-        <li><a href="#about" class="header__nav-item">How it&apos;s made?</a></li>
-        <li><a href="#products" class="header__nav-item">Products</a></li>
-        <li><a class="header__nav-item">Contact</a></li>
-      </ul>
-    </nav>
-    <button class="buy-now" data-modal-buy-open type="button">
-      <span class="buy-now__text">Buy now</span>
-      <svg class="buy-now__svg">
-        <use href="./images/icons-ice_cream.svg#icon-arrow-right-bold"></use>
-      </svg>
-    </button>
-  </div>
-</header>
-
+    <div class="header__wrapper">
+      <button class="header__menu" data-modal-menu-open>
+        <svg class="header__icon">
+          <use href="./images/icons-ice_cream.svg#icon-eva_menu-fill"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="header__nav">
+          <li><a href="#header" class="header__nav-item">Home</a></li>
+          <li><a href="#about" class="header__nav-item">How it&apos;s made?</a></li>
+          <li><a href="#products" class="header__nav-item">Products</a></li>
+          <li><a class="header__nav-item">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="buy-now" data-modal-buy-open type="button">
+        <span class="buy-now__text">Buy now</span>
+        <svg class="buy-now__svg">
+          <use href="./images/icons-ice_cream.svg#icon-arrow-right-bold"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+</div>
 <div class="menu-container is-hidden" data-menu-buy>
   <div class="menu-container__header">
     <svg class="header__logo">
@@ -58,7 +59,9 @@
         >How it&apos;s made?</a
       >
     </li>
-    <li><a href="#products" class="menu-container__link" data-modal-menu-close>Our products</a></li>
+    <li>
+      <a href="#products" class="menu-container__link" data-modal-menu-close>Our products</a>
+    </li>
     <li><a class="menu-container__link" data-modal-menu-close>Contact</a></li>
   </ul>
 
