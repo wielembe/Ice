@@ -110,7 +110,7 @@ ul {
     }
     @include desktop {
       font-size: 30px;
-      padding-top: 135px;
+      padding-top: 160px;
     }
   }
   &__text {
@@ -201,7 +201,16 @@ ul {
   @include desktop {
     width: 40%;
     height: auto;
-    translate: 12% -50%;
+    translate: 11% -50%;
+  }
+  &__img {
+    width: 200px;
+    height: 200px;
+    @include desktop {
+      width: 302px;
+      height: 302px;
+      translate: -15% -10%;
+    }
   }
 }
 
@@ -219,11 +228,17 @@ ul {
     top: 12px;
   }
   @include desktop {
+    width: 302px;
+    height: 302px;
+    translate: -15% -10%;
     top: 16px;
   }
 }
 .ice-coffee {
   @extend .ice-cream;
+  &__img {
+    @extend .ice-cream__img;
+  }
 }
 .ice-coffee::before {
   content: '';
@@ -239,11 +254,17 @@ ul {
     top: 12px;
   }
   @include desktop {
+    width: 302px;
+    height: 302px;
+    translate: -15% -10%;
     top: 16px;
   }
 }
 .milkshakes {
   @extend .ice-cream;
+  &__img {
+    @extend .ice-cream__img;
+  }
 }
 .milkshakes::before {
   content: '';
@@ -259,6 +280,9 @@ ul {
     top: 12px;
   }
   @include desktop {
+    width: 302px;
+    height: 302px;
+    translate: -15% -10%;
     top: 16px;
   }
 }
