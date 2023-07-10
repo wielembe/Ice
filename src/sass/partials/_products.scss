@@ -122,12 +122,14 @@ ul {
     width: 200px;
     text-align: center;
     margin: 0 auto;
+    margin-top: 40px;
     @include tablet {
       width: 172px;
     }
     @include desktop {
       width: 246px;
       font-size: 16px;
+      margin-top: 66px;
     }
   }
   &__flex-container {
@@ -154,7 +156,7 @@ ul {
       padding-bottom: 12px;
     }
     @include desktop {
-      padding-bottom: 60px;
+      padding-bottom: 5px;
     }
   }
 }
@@ -173,7 +175,7 @@ ul {
   @include desktop {
     width: 370px;
     height: 536px;
-    margin-top: 303px;
+    margin-top: 230px;
   }
   &--ice-cream {
     background-color: #aec6a5;
@@ -197,8 +199,9 @@ ul {
     translate: 5% -70%;
   }
   @include desktop {
-    max-width: 40%;
-    translate: 45% -50%;
+    width: 40%;
+    height: auto;
+    translate: 12% -50%;
   }
 }
 
