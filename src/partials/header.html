@@ -49,17 +49,20 @@
     </button>
   </div>
   <ul class="menu-container__list">
-    <li><a href="#header" class="menu-container__link">Home</a></li>
+    <li><a href="#header" class="menu-container__link" data-modal-menu-close>Home</a></li>
     <li>
-      <a href="#about" class="menu-container__link menu-container__link--accent"
+      <a
+        href="#about"
+        data-modal-menu-close
+        class="menu-container__link menu-container__link--accent"
         >How it&apos;s made?</a
       >
     </li>
-    <li><a href="#products" class="menu-container__link">Our products</a></li>
-    <li><a class="menu-container__link">Contact</a></li>
+    <li><a href="#products" class="menu-container__link" data-modal-menu-close>Our products</a></li>
+    <li><a class="menu-container__link" data-modal-menu-close>Contact</a></li>
   </ul>
 
-  <button type="button" data-modal-buy-open class="menu-container__button">
+  <button type="button" data-modal-buy-open data-modal-menu-close class="menu-container__button">
     <span class="menu-container__text">Buy now</span>
     <svg class="menu-container__svg">
       <use href="./images/icons-ice_cream.svg#icon-arrow-right-bold"></use>
