@@ -1,13 +1,20 @@
 @import '../mixins';
 @import './vars';
+* {
+  margin: 0;
+  padding: 0;
+}
 ul {
   list-style: none;
 }
 .container {
-  max-width: 480px;
+  max-width: 320px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  @include mobile {
+    max-width: 480px;
+  }
   @include tablet {
     max-width: 768px;
   }
@@ -179,21 +186,22 @@ ul {
   }
 }
 .ice-cream {
-  width: 200px;
-  height: 200px;
+  max-width: 100%;
+  height: auto;
   border-radius: 50%;
   position: absolute;
   translate: 20% -50%;
   z-index: 20;
   @include tablet {
+    max-width: 50%;
     translate: 5% -70%;
   }
   @include desktop {
-    width: 302px;
-    height: 302px;
-    translate: 25% -40%;
+    max-width: 40%;
+    translate: 45% -50%;
   }
 }
+
 .ice-cream::before {
   content: '';
   width: 200px;
