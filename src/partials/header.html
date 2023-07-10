@@ -6,18 +6,16 @@
   <div class="header__wrapper">
     <button class="header__menu" data-modal-menu-open>
       <svg class="header__icon">
-        <use
-          href="./images/icons-ice_cream.svg#icon-eva_menu-fill"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        ></use>
+        <use href="./images/icons-ice_cream.svg#icon-eva_menu-fill"></use>
       </svg>
     </button>
-    <nav class="header__nav">
-      <li><a href="#header" class="header__nav-item">Home</a></li>
-      <li><a href="#about" class="header__nav-item">How it&apos;s made?</a></li>
-      <li><a href="#products" class="header__nav-item">Products</a></li>
-      <li><a class="header__nav-item">Contact</a></li>
+    <nav>
+      <ul class="header__nav">
+        <li><a href="#header" class="header__nav-item">Home</a></li>
+        <li><a href="#about" class="header__nav-item">How it&apos;s made?</a></li>
+        <li><a href="#products" class="header__nav-item">Products</a></li>
+        <li><a class="header__nav-item">Contact</a></li>
+      </ul>
     </nav>
     <button class="buy-now" data-modal-buy-open type="button">
       <span class="buy-now__text">Buy now</span>
@@ -90,20 +88,36 @@
         <label>
           <input type="checkbox" name="product" value="ice-coffe" class="buy__check" />
           <div class="buy__ice-coffe">
-            <img href="./images/header/ice-cream-132.jpg" class="buy__picture buy__ice-coffe-img" />
+            <div class="buy__picture buy__ice-coffe-img"></div>
             <p class="buy__paragraph">Ice coffe</p>
           </div>
         </label>
         <label>
           <input type="checkbox" name="product" value="milkshake" class="buy__check" />
           <div class="buy__milkshake">
-            <img href="./images/header/ice-cream.jpg" class="buy__picture buy__milkshake-img" />
+            <div class="buy__picture buy__milkshake-img"></div>
             <p class="buy__paragraph">Milkshake</p>
           </div>
         </label>
       </fieldset>
-      <label><input type="text" name="name" placeholder="Name" class="buy__input" /></label>
-      <label><input type="text" name="phone" placeholder="Phone" class="buy__input" /></label>
+      <label
+        ><input
+          type="text"
+          name="name"
+          placeholder="Name"
+          class="buy__input"
+          pattern="[A-Za-z]{1,15}"
+          required
+      /></label>
+      <label
+        ><input
+          type="text"
+          name="phone"
+          placeholder="Phone"
+          class="buy__input"
+          pattern="[0-9]{9}"
+          required
+      /></label>
       <label><textarea placeholder="Comment" class="buy__textarea"></textarea></label>
       <button type="submit" class="buy__submit">Submit</button>
     </form>
