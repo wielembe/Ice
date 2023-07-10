@@ -68,12 +68,14 @@
   }
   &__img {
     display: block;
-    max-width: 100%;
+    width: 279px;
     height: auto;
     position: relative;
     z-index: 5;
   }
   &__img-container {
+    min-width: 279px;
+    height: 279px;
     border-radius: 50%;
     margin: 0 auto 40px;
     position: relative;
@@ -85,8 +87,8 @@
     }
     &::before {
       content: '';
-      width: 350px;
-      height: 350px;
+      width: 279px;
+      height: 279px;
       background-color: #d9d9d9;
       background-image: linear-gradient(#f8d24eb3, #f8d24eb3);
       border-radius: 50%;
