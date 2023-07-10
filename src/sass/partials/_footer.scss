@@ -27,7 +27,7 @@
       justify-content: space-around;
     }
     @media screen and (min-width: 1200px) {
-      margin-bottom: 44px;
+      margin-bottom: 40px;
       display: flex;
     }
   }
@@ -86,6 +86,7 @@
       font-weight: 700;
       letter-spacing: 3.48px;
       flex-direction: row;
+
       font-size: 58px;
 
       height: 122px;
@@ -174,7 +175,7 @@
     text-align: center;
     margin-bottom: 20px;
     max-width: 280px;
-    margin: auto;
+    margin: 0 auto;
 
     @media screen and (min-width: 768px) {
       margin-top: 12px;
@@ -183,8 +184,9 @@
     }
     @media screen and (min-width: 1200px) {
       margin-top: 12px;
-      margin-bottom: 12px;
+      padding-bottom: 12px;
       flex-wrap: wrap;
+      margin: 0 auto;
     }
   }
 }
