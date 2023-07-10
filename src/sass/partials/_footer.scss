@@ -1,6 +1,6 @@
 .footer {
   background-color: #84a278;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   font-size: 12px;
 
   &__line {
@@ -20,7 +20,7 @@
   }
 
   &__container {
-    margin-bottom: 62px;
+    padding-bottom: 40px;
 
     @media screen and (min-width: 768px) {
       margin-bottom: 38px;
@@ -68,8 +68,10 @@
     font-weight: 700;
     letter-spacing: 1.36px;
     text-transform: uppercase;
+    margin-top: 0;
     text-align: left;
     flex-direction: column;
+    max-width: 200px;
 
     @media screen and (min-width: 768px) {
       display: flex;
@@ -85,9 +87,10 @@
       letter-spacing: 3.48px;
       flex-direction: row;
       font-size: 58px;
-      width: 504px;
+
       height: 122px;
       text-align: left;
+      width: 497px;
     }
   }
   &__social-list {
@@ -169,7 +172,9 @@
     font-weight: 700;
     letter-spacing: 0.28px;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+    max-width: 280px;
+    margin: auto;
 
     @media screen and (min-width: 768px) {
       margin-top: 12px;
