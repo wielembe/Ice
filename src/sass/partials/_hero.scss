@@ -101,8 +101,12 @@
       height: 42px;
     }
   }
+  &__products-link {
+    color: #131313;
+    text-decoration: none;
+  }
+
   &__how-made {
-    color: $secondaryBrandColor;
     font-size: 12px;
     font-weight: 600;
     text-decoration: underline;
@@ -127,6 +131,10 @@
       height: 42px;
       text-align: center;
     }
+  }
+
+  &__about-link {
+    color: $secondaryBrandColor;
   }
 
   &__aside {
