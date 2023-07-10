@@ -29,6 +29,7 @@
     @media screen and (min-width: 1200px) {
       margin-bottom: 40px;
       display: flex;
+      justify-content: space-between;
     }
   }
   &__social {
@@ -91,7 +92,8 @@
 
       height: 122px;
       text-align: left;
-      width: 497px;
+      width: 500px;
+      max-width: 500px;
     }
   }
   &__social-list {
