@@ -1,6 +1,6 @@
 @import '../mixins';
 @import './vars';
-* {
+.products {
   margin: 0;
   padding: 0;
 }
@@ -151,12 +151,8 @@ ul {
     display: flex;
     align-items: flex-end;
     cursor: pointer;
-    padding-bottom: 16px;
-    @include tablet {
-      padding-bottom: 12px;
-    }
     @include desktop {
-      padding-bottom: 5px;
+      padding-bottom: 24px;
     }
   }
 }
