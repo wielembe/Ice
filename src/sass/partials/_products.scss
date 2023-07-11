@@ -113,6 +113,11 @@ ul {
     text-transform: uppercase;
     text-align: center;
     padding-top: 123px;
+    margin-bottom: 0px;
+
+    @include mobile {
+      padding-top: 126px;
+    }
 
     @include tablet {
       font-size: 22px;
@@ -146,12 +151,17 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 56%;
+    gap: 50px;
+
     @include tablet {
       height: 65%;
     }
     @include desktop {
       height: 55%;
+    }
+
+    &--gap {
+      gap: 100px;
     }
   }
   &__button {
@@ -175,15 +185,29 @@ ul {
   @include tablet {
     width: 224px;
     height: 548px;
-    margin-top: 200px;
+    margin-top: 184px;
+    margin-bottom: 44px;
   }
   @include desktop {
     width: 370px;
     height: 536px;
-    margin-top: 270px;
+    margin-top: 273px;
   }
   &--ice-cream {
     background-color: #aec6a5;
+    margin-top: 148px;
+
+    @include mobile {
+      margin-top: 145px;
+    }
+
+    @include tablet {
+      margin-top: 184px;
+    }
+
+    @include desktop {
+      margin-top: 273px;
+    }
   }
   &--ice-coffee {
     background-color: #efd478;
@@ -359,6 +383,7 @@ ul {
     margin-top: 28px;
     width: 142px;
     height: 56px;
+
     @include desktop {
       margin-top: 32px;
     }

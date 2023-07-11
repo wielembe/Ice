@@ -17,13 +17,17 @@
 
   &__header-container {
     width: 210px;
-    padding: 62px 0;
+    padding-bottom: 54px;
     margin: auto;
+    padding-top: 61px;
+
     @include tablet {
       width: max-content;
+      padding-top: 60px;
+      padding-bottom: 80px;
     }
     @include desktop {
-      padding-bottom: 102px;
+      padding-bottom: 121px;
     }
   }
   &__label {
@@ -84,9 +88,12 @@
     position: relative;
     @include tablet {
       max-width: 50%;
+      padding-top: 18px;
+      margin-right: 0px;
     }
     @include desktop {
       max-width: 40%;
+      padding-top: 0px;
     }
     &::before {
       content: '';
@@ -101,7 +108,7 @@
       @include tablet {
         width: 330px;
         height: 330px;
-        bottom: -30px;
+        bottom: -48px;
       }
       @include desktop {
         width: 468px;
@@ -124,6 +131,8 @@
     }
     @include desktop {
       width: 463px;
+      margin-left: 109px;
+      padding-top: 51px;
     }
   }
   &__texts {
@@ -159,6 +168,11 @@
     height: 42px;
     margin-top: 24px;
     cursor: pointer;
+
+    @include desktop {
+      margin-top: 54px;
+    }
+
     &--svg {
       position: relative;
       top: 4px;
