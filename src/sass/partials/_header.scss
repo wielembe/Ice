@@ -291,7 +291,6 @@
   cursor: not-allowed;
   transform: scale(1);
   background-color: #0a0a0a6a;
-  overflow: hidden;
 }
 
 .buy {
@@ -304,7 +303,7 @@
   width: 280px;
 
   cursor: auto;
-  overflow: scroll;
+  overflow: auto;
 
   @include tablet {
     width: 568px;
@@ -350,6 +349,7 @@
     justify-content: center;
     gap: 85px;
     border: none;
+    padding-bottom: 0px;
 
     @include tablet {
       gap: 32px;
@@ -495,7 +495,6 @@
     border-radius: 10px;
     font-size: 12px;
     font-weight: 600;
-    margin-bottom: 29px;
 
     @include tablet {
       width: 121px;

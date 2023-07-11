@@ -23,7 +23,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding-bottom: 0;
+    padding-bottom: 12px;
+    margin-bottom: 0px;
   }
 
   //&__container {
@@ -121,13 +122,13 @@
     @media screen and (min-width: 768px) {
       gap: 30px;
       margin-bottom: 34px;
-      margin-top: -250px;
+      margin-top: -196px;
     }
     @media screen and (min-width: 1200px) {
       gap: 30px;
       justify-content: flex-end;
       margin-bottom: 40px;
-      margin-top: -230px;
+      margin-top: -148px;
     }
   }
 
