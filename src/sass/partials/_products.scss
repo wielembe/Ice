@@ -92,9 +92,12 @@ ul {
     }
   }
   &__list {
+    padding: 0;
+
     @include tablet {
       display: flex;
       gap: 16px;
+      padding: 0;
     }
     @include desktop {
       display: flex;
