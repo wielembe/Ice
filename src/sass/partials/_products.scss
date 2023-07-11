@@ -298,7 +298,7 @@ ul {
   position: fixed;
   inset: 0;
   z-index: 9999;
-  height: 90vh;
+  height: 100%;
   cursor: not-allowed;
   transform: scale(1);
   background-color: #00000033;
@@ -319,6 +319,8 @@ ul {
   border-radius: 20px;
   border: 2px solid $secondaryBrandColor;
   width: 280px;
+  height: 82%;
+  overflow: hidden;
 
   @include tablet {
     width: 568px;
