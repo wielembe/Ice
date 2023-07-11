@@ -110,12 +110,13 @@
     @media screen and (min-width: 768px) {
       gap: 30px;
       margin-bottom: 34px;
+      margin-top: 101px;
     }
     @media screen and (min-width: 1200px) {
       gap: 30px;
       justify-content: flex-end;
       margin-bottom: 40px;
-      margin-top: 138px;
+      margin-top: 30px;
     }
   }
 
@@ -206,6 +207,10 @@
     max-width: 480px;
     @include tablet {
       max-width: 768px;
+      display: flex;
+
+      justify-content: space-between;
+      align-items: flex-start;
     }
     @include desktop {
       max-width: 1200px;
