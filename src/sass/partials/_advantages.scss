@@ -11,7 +11,7 @@ ul {
 }
 .advantages-container {
   max-width: 480px;
-  padding: 0;
+  margin: 0 auto;
   @include tablet {
     max-width: 780px;
     margin: 0 auto;
