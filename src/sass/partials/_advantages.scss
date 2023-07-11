@@ -81,7 +81,6 @@ ul {
     }
     @include desktop {
       font-size: 16px;
-      letter-spacing: 0.32px;
     }
   }
   &__element {
@@ -116,8 +115,10 @@ ul {
 figure {
   max-width: 230px;
 
+  @include tablet {
+    max-width: 152px;
+  }
   @include desktop {
-    max-width: 225px;
-    height: 368px;
+    max-width: 300px;
   }
 }
