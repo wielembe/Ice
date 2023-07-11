@@ -364,7 +364,6 @@
     border-radius: 15px;
     position: relative;
     border: 2px solid #96af8c;
-    box-shadow: 0px 5.2602739334106445px 19.72602653503418px 0px rgba(212, 20, 67, 0.1);
 
     @include tablet {
       width: 132px;
@@ -380,15 +379,51 @@
     top: calc(7px - 50%);
   }
 
+  &__ice-cream::before {
+    content: '';
+    width: 132px;
+    height: 132px;
+    position: absolute;
+    border-radius: 50%;
+    top: calc(7px - 50%);
+    z-index: -10;
+    box-shadow: 0 8px 30px rgba(10, 136, 23, 0.25);
+    background-image: linear-gradient(rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+  }
+
   &__ice-coffe {
     border: 2px solid #efd478;
     box-shadow: 0px 5.2602739334106445px 19.72602653503418px 0px rgba(212, 20, 67, 0.1);
+  }
+
+  &__ice-coffe::before {
+    content: '';
+    width: 132px;
+    height: 132px;
+    position: absolute;
+    border-radius: 50%;
+    top: calc(7px - 50%);
+    z-index: -10;
+    box-shadow: 0 8px 30px rgba(153, 114, 23, 0.25);
+    background-image: linear-gradient(rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
   }
 
   &__milkshake {
     border: 2px solid #d6936d;
     margin-bottom: 32px;
     box-shadow: 0px 5.2602739334106445px 19.72602653503418px 0px rgba(212, 20, 67, 0.1);
+  }
+
+  &__milkshake::before {
+    content: '';
+    width: 132px;
+    height: 132px;
+    position: absolute;
+    border-radius: 50%;
+    top: calc(7px - 50%);
+    z-index: -10;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
   }
 
   &__picture {
@@ -402,8 +437,6 @@
   &__ice-cream-img {
     background-image: url('../images/header/ice-cream-132.jpg');
     background-size: 132px 132px;
-    box-shadow: 0 7px #9cbe8fb2,
-      0px 12.2602739334106445px 19.72602653503418px rgba(10, 136, 23, 0.25);
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -416,8 +449,6 @@
   &__ice-coffe-img {
     background-image: url('../images/header/ice-coffe-132.jpg');
     background-size: 132px 132px;
-    box-shadow: 0 7px #f8d24eb2,
-      0px 12.2602739334106445px 19.72602653503418px rgba(153, 114, 23, 0.25);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -429,7 +460,6 @@
   &__milkshake-img {
     background-image: url('../images/header/milkshake-132.jpg');
     background-size: 132px 132px;
-    box-shadow: 0 7px #d5753fb2, 0px 12.2602739334106445px 19.72602653503418px rgba(0, 0, 0, 0.25);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
