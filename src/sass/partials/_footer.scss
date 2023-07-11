@@ -4,11 +4,16 @@
   background-color: #84a278;
   padding-bottom: 20px;
   font-size: 12px;
+  margin: 0;
+
+  @include mobile {
+    padding-bottom: 24px;
+  }
 
   &__line {
     border: 0.4 solid #e1e1e1;
     text-align: left;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     width: 100%;
   }
 
@@ -50,18 +55,22 @@
     font-weight: 700;
     letter-spacing: 0.4;
     width: 232px;
+    margin-top: 60px;
     margin-bottom: 16px;
 
     @media screen and (min-width: 768px) {
       width: 352px;
       flex-direction: row;
       font-size: 26px;
+      margin-top: 0px;
+      margin-bottom: 8px;
     }
     @media screen and (min-width: 1200px) {
       display: flex;
       font-weight: 400;
       font-size: 30px;
       width: 100%;
+      margin-bottom: 14px;
     }
   }
 
@@ -76,6 +85,7 @@
     flex-direction: column;
     max-width: 200px;
     padding-bottom: 60px;
+    margin-bottom: 0px;
 
     @media screen and (min-width: 768px) {
       display: flex;
@@ -85,6 +95,7 @@
       width: 352px;
       height: 183px;
       text-align: left;
+      padding-bottom: 0px;
     }
     @media screen and (min-width: 1200px) {
       font-weight: 700;
@@ -167,6 +178,12 @@
     text-align: right;
     font-size: 12px;
     padding-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    @include desktop {
+      padding-bottom: 60px;
+    }
   }
   &__contact-link {
     color: #fcfcfc;
@@ -181,12 +198,12 @@
     letter-spacing: 0.28px;
     text-align: center;
     margin-bottom: 20px;
-    max-width: 280px;
+    max-width: 160px;
     margin: 0 auto;
 
     @media screen and (min-width: 768px) {
       margin-top: 12px;
-      margin-bottom: 12px;
+      margin-bottom: 0px;
       text-align: center;
     }
     @media screen and (min-width: 1200px) {
@@ -198,11 +215,21 @@
   }
 }
 
-.container {
-  max-width: 320px;
-  width: 100%;
+.footer__container {
+  width: 280px;
   margin: 0 auto;
-  padding: 0 15px;
+
+  @include mobile {
+    width: 440px;
+  }
+
+  @include tablet {
+    width: 704px;
+  }
+
+  @include desktop {
+    width: 1168px;
+  }
   //@include mobile {
   //max-width: 480px;
   //@include tablet {
