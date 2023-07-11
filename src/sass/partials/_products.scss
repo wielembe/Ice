@@ -302,16 +302,28 @@ ul {
 }
 .products-modal {
   position: fixed;
-  inset: 0;
-  margin: auto;
   overflow: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
   background-color: $textWhite;
+  visibility: visible;
+  display: block;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 3;
+  border-radius: 20px;
   border: 2px solid $secondaryBrandColor;
-  border-radius: 10px;
   width: 280px;
-  cursor: auto;
+
+  @include tablet {
+    width: 568px;
+    top: 30px;
+  }
   @include desktop {
     width: 568px;
+    top: 30px;
   }
   &__close {
     display: flex;
@@ -371,6 +383,35 @@ ul {
       margin-top: 32px;
       margin-bottom: 32px;
     }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    @include desktop {
+      width: 368px;
+      margin-top: 30px;
+    }
+  }
+  &__input {
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    width: 240px;
+    height: 42px;
+    font-size: 14px;
+    line-height: 1.76;
+    background-color: rgba(248, 210, 78, 0.1);
+    border: 1px solid $firstBrandColor;
+    border-radius: 10px;
+    padding: 11px 16px;
+  }
+  &__feedback {
+    @extend .products-modal__input;
+    height: 84px;
+    resize: none;
   }
 }
 .value {
@@ -462,35 +503,4 @@ ul {
     line-height: 1.76;
     color: #131313;
   }
-}
-.products-modal__form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
-  width: 240px;
-  height: 200px;
-  margin: 0 auto;
-  margin-top: 40px;
-  @include desktop {
-    width: 368px;
-    margin-top: 48px;
-  }
-}
-.products-modal__input {
-  font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
-  width: 240px;
-  height: 42px;
-  font-size: 14px;
-  line-height: 1.76;
-  background-color: rgba(248, 210, 78, 0.1);
-  border: 1px solid $firstBrandColor;
-  border-radius: 10px;
-  padding: 11px 16px;
-}
-.products-modal__feedback {
-  @extend .products-modal__input;
-  height: 84px;
-  resize: none;
 }
