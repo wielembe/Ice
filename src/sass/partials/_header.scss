@@ -26,8 +26,12 @@
   background-color: $firstBrandColor;
   display: flex;
   justify-content: space-between;
+  padding-top: 12px;
+  align-items: end;
 
-  padding-top: 20px;
+  @include mobile {
+    padding-top: 14px;
+  }
 
   @include desktop {
     padding-top: 8px;
@@ -64,6 +68,11 @@
     width: 32px;
     height: 32px;
     fill: #ffffff;
+    padding-top: 4px;
+
+    @include mobile {
+      padding-top: 0px;
+    }
   }
 
   &__wrapper {
@@ -167,12 +176,14 @@
       padding-bottom: 40px;
       padding-left: 20px;
       padding-top: 20px;
+      align-items: start;
     }
     @include tablet {
       padding-bottom: 72px;
       padding-left: 32px;
       padding-right: 32px;
       padding-top: 20px;
+      align-items: center;
     }
   }
 
@@ -293,7 +304,7 @@
   width: 280px;
 
   cursor: auto;
-  overflow: auto;
+  overflow: scroll;
 
   @include tablet {
     width: 568px;
@@ -302,12 +313,12 @@
 
   &__close-button {
     border: none;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     background-color: transparent;
     position: absolute;
-    top: 2%;
-    left: 84%;
+    top: 12px;
+    right: 12px;
     cursor: pointer;
   }
 
@@ -360,10 +371,6 @@
       height: 135px;
       margin-bottom: 40px;
     }
-
-    &:last-of-type {
-      margin-bottom: 30px;
-    }
   }
 
   &__icon--ice-cream {
@@ -380,6 +387,7 @@
 
   &__milkshake {
     border: 2px solid #d6936d;
+    margin-bottom: 32px;
     box-shadow: 0px 5.2602739334106445px 19.72602653503418px 0px rgba(212, 20, 67, 0.1);
   }
 
@@ -487,6 +495,7 @@
     border-radius: 10px;
     font-size: 12px;
     font-weight: 600;
+    margin-bottom: 29px;
 
     @include tablet {
       width: 121px;

@@ -16,7 +16,7 @@
     }
 
     @include tablet {
-      padding-top: 16px;
+      padding-top: 14px;
       padding-right: calc((100% - 704px) / 2);
       padding-left: calc((100% - 704px) / 2);
     }
@@ -151,6 +151,7 @@
     @include desktop {
       right: calc((100% - 1168px) / 2);
       top: 126px;
+      gap: 16px;
     }
   }
 
@@ -290,7 +291,7 @@
   &__dots-mobile {
     position: absolute;
     width: 320px;
-    height: 50px;
+    height: 52px;
     bottom: 0px;
     right: 0px;
 
