@@ -5,19 +5,19 @@ ul {
   background-color: #84a178;
   color: #fcfcfc;
   padding-top: 60px;
-  padding-bottom: 68px;
+  padding-bottom: 48px;
   display: block;
 }
 .advantages-container {
-  max-width: calc(100vw - 40px);
+  max-width: 480px;
   @include tablet {
-    max-width: calc(100vw - 63px);
-    margin: 0 auto 0;
+    max-width: 780px;
   }
   @include desktop {
     max-width: 1200px;
     padding-top: 60px;
     padding-bottom: 80px;
+    margin: auto;
   }
 }
 .advantages-header:not(:focus):not(:active) {
@@ -36,7 +36,7 @@ ul {
   align-items: center;
   @include tablet {
     gap: 32px;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
   }
 
@@ -78,12 +78,10 @@ ul {
     @include tablet {
       font-size: 14px;
       line-height: 174%;
-      margin-bottom: 204px;
     }
     @include desktop {
       font-size: 16px;
       letter-spacing: 0.32px;
-      margin-bottom: 178px;
     }
   }
   &__element {
@@ -117,7 +115,6 @@ ul {
 }
 figure {
   max-width: 230px;
-  margin: 0;
 
   @include desktop {
     max-width: 225px;
