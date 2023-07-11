@@ -285,26 +285,33 @@ ul {
     top: 16px;
   }
 }
+.products-is-hidden {
+  pointer-events: none;
+  visibility: none;
+  opacity: 0;
+  transform: scale(0);
+}
 .backdrop {
   position: fixed;
   inset: 0;
   z-index: 9999;
+  height: 90vh;
   cursor: not-allowed;
   transform: scale(1);
   background-color: #00000033;
 }
 .products-modal {
-  position: relative;
+  position: fixed;
+  inset: 0;
   margin: auto;
+  overflow: auto;
   background-color: $textWhite;
   border: 2px solid $secondaryBrandColor;
   border-radius: 10px;
   width: 280px;
-  height: 968px;
   cursor: auto;
   @include desktop {
     width: 568px;
-    height: 996px;
   }
   &__close {
     display: flex;
@@ -317,6 +324,7 @@ ul {
     background-color: $textWhite;
     border: none;
     position: absolute;
+    cursor: pointer;
     @include desktop {
       width: 24px;
       height: 24px;
@@ -356,10 +364,12 @@ ul {
     border: 2px solid $secondaryBrandColor;
     border-radius: 10px;
     margin-top: 24px;
+    margin-bottom: 28px;
     cursor: pointer;
     @include desktop {
       width: 121px;
       margin-top: 32px;
+      margin-bottom: 32px;
     }
   }
 }
@@ -430,6 +440,7 @@ ul {
   line-height: 1.4;
   color: #131313;
   text-align: center;
+  margin-top: 40px;
   &__box {
     margin-left: 20px;
     margin-right: 20px;
@@ -476,15 +487,10 @@ ul {
   background-color: rgba(248, 210, 78, 0.1);
   border: 1px solid $firstBrandColor;
   border-radius: 10px;
+  padding: 11px 16px;
 }
 .products-modal__feedback {
   @extend .products-modal__input;
   height: 84px;
   resize: none;
-}
-.products-is-hidden {
-  pointer-events: none;
-  visibility: none;
-  opacity: 0;
-  transform: scale(0);
 }
