@@ -68,19 +68,23 @@
     width: 100%;
     height: auto;
     //min-width: 380px;
-
+    width: 280px;
     max-width: 767px;
     padding-bottom: 119px;
 
+    @include mobile {
+      width: 440px;
+    }
+
     @include tablet {
-      min-width: 768px;
+      min-width: 704px;
       max-width: 1199px;
       margin-top: -80px;
       padding-bottom: 80px;
     }
 
     @include desktop {
-      min-width: 1200px;
+      min-width: 1031px;
       margin-top: -127px;
     }
   }
