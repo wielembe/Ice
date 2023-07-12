@@ -151,17 +151,26 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 50px;
+    gap: 48px;
 
     @include tablet {
       height: 65%;
+      gap: 55px;
     }
     @include desktop {
       height: 55%;
     }
 
     &--gap {
-      gap: 100px;
+      gap: 81px;
+    }
+
+    &--gap-small {
+      gap: 31px;
+
+      @include desktop {
+        gap: 55px;
+      }
     }
   }
   &__button {
@@ -187,7 +196,7 @@ ul {
   margin-bottom: 60px;
   @include tablet {
     width: 224px;
-    height: 548px;
+    height: 428px;
     margin-top: 184px;
     margin-bottom: 44px;
   }
