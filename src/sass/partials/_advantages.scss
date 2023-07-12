@@ -1,6 +1,3 @@
-ul {
-  list-style-type: none;
-}
 .advantages {
   background-color: #84a178;
   color: #fcfcfc;
@@ -23,81 +20,59 @@ ul {
   @include desktop {
     padding-bottom: 102px;
   }
-}
-.advantages-container {
-  max-width: 480px;
-  margin: 0 auto;
-  @include tablet {
-    max-width: 780px;
+
+  &__container {
+    max-width: 480px;
     margin: 0 auto;
-  }
-  @include desktop {
-    max-width: 1200px;
-    padding-top: 60px;
-    padding-bottom: 80px;
-    margin: auto;
-  }
-}
-.advantages-header:not(:focus):not(:active) {
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-.advantages-list {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-  align-items: center;
-  padding: 0;
-  margin-top: 0px;
-  margin-bottom: 0px;
-
-  @include mobile {
-    gap: 32px;
+    @include tablet {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    @include desktop {
+      max-width: 1200px;
+      padding-top: 60px;
+      padding-bottom: 80px;
+      margin: auto;
+    }
   }
 
-  @include tablet {
-    gap: 32px;
-    justify-content: space-around;
-    flex-direction: row;
+  &__header:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
   }
 
-  @include desktop {
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 32px;
-  }
-
-  &__number {
-    color: #fcfcfc;
-    text-align: center;
-    font-size: 36px;
-    line-height: normal;
-    letter-spacing: 1.44px;
-    text-transform: uppercase;
-    font-size: 36px;
-    font-weight: bold;
-    margin-top: 22px;
-    margin-bottom: 16px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    list-style-type: none;
 
     @include mobile {
-      margin-top: 16px;
+      gap: 32px;
     }
 
     @include tablet {
-      margin-bottom: 12px;
-      font-size: 48px;
-      letter-spacing: 1.92px;
+      gap: 32px;
+      justify-content: space-around;
+      flex-direction: row;
     }
+
     @include desktop {
-      font-size: 58px;
-      letter-spacing: 2.32px;
+      justify-content: space-between;
+      flex-direction: row;
+      gap: 32px;
     }
   }
+
   &__text {
     color: #fcfcfc;
     text-align: center;
@@ -138,26 +113,54 @@ ul {
       gap: 12px;
     }
   }
-}
 
-.advantages-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 25px;
-  background-color: #f8d24e;
-  width: 50px;
-  height: 50px;
-  padding: 7px;
-  margin: 0 auto;
-}
-figure {
-  margin-top: 0px;
-
-  @include tablet {
-    max-width: 152px;
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: #f8d24e;
+    width: 50px;
+    height: 50px;
+    padding: 7px;
+    margin: 0 auto;
   }
-  @include desktop {
-    max-width: 300px;
+
+  &__number {
+    color: #fcfcfc;
+    text-align: center;
+    font-size: 36px;
+    line-height: normal;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 22px;
+    margin-bottom: 16px;
+
+    @include mobile {
+      margin-top: 16px;
+    }
+
+    @include tablet {
+      margin-bottom: 12px;
+      font-size: 48px;
+      letter-spacing: 1.92px;
+    }
+    @include desktop {
+      font-size: 58px;
+      letter-spacing: 2.32px;
+    }
+  }
+
+  &__figure {
+    margin-top: 0px;
+
+    @include tablet {
+      max-width: 152px;
+    }
+    @include desktop {
+      max-width: 300px;
+    }
   }
 }
